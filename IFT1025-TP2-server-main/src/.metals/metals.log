@@ -8,3 +8,7 @@ SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
 2023.03.30 15:12:52 INFO  time: initialize in 1.78s
 2023.03.30 15:12:59 WARN  Build server is not auto-connectable.
 2023.03.30 15:12:59 WARN  no build tool detected in workspace '/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.03.30 15:13:58 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.30 15:14:03 INFO  time: code lens generation in 3.91s
+2023.03.30 15:15:49 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.30 15:15:52 INFO  time: code lens generation in 1.31s

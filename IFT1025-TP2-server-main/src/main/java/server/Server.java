@@ -125,4 +125,8 @@ public class Server {
     public void handleRegistration() {
         // TODO: implémenter cette méthode
     }
+
+    public static void main(String[] args) {
+
+    }
 }
