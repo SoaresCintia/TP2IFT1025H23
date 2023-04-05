@@ -12,3 +12,62 @@ SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
 2023.03.30 15:14:03 INFO  time: code lens generation in 3.91s
 2023.03.30 15:15:49 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
 2023.03.30 15:15:52 INFO  time: code lens generation in 1.31s
+Mar. 30, 2023 3:17:50 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java?%7B%22path%22%3A%22%2FUsers%2Fcintia%2FDocuments%2FBaccInf%2FSem2%2FIFT1025%2FTP2%2FIFT1025-TP2-server-main%2Fsrc%2Fmain%2Fjava%2Fserver%2FServer.java%22%2C%22ref%22%3A%22%22%7D"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:120)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:173)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLspService.didFocus(MetalsLspService.scala:1173)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	... 16 more
+
+2023.03.30 15:32:53 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.30 15:32:55 INFO  time: code lens generation in 1.85s
+Mar. 30, 2023 3:33:23 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 203
+2023.03.30 15:37:11 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.30 15:37:15 INFO  time: code lens generation in 3.53s
+2023.03.30 15:48:36 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/MainEssais.java
+2023.03.30 15:48:38 INFO  time: code lens generation in 1.33s
+2023.03.30 15:48:48 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/test/java/server/AppTest.java
+2023.03.30 15:48:50 INFO  time: code lens generation in 1.24s
+2023.03.30 15:48:59 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/ServerLauncher.java
+2023.03.30 15:49:01 INFO  time: code lens generation in 1.36s
+2023.03.30 15:49:23 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/EventHandler.java
+2023.03.30 15:49:24 INFO  time: code lens generation in 1.02s
+2023.03.30 15:49:31 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/MainEssais.java
+2023.03.30 15:49:40 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/ServerLauncher.java
+2023.03.30 15:49:42 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/test/java/server/AppTest.java
+2023.03.30 16:13:23 INFO  Shutting down server
+2023.03.30 16:13:23 INFO  shutting down Metals
+2023.03.30 16:13:23 INFO  Exiting server

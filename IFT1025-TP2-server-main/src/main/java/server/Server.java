@@ -1,6 +1,7 @@
 package server;
 
 import javafx.util.Pair;
+import java.util.*;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -12,78 +13,110 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * Serveur
+ */
 public class Server {
+    /**
+     * 
+     */
+    // public final static String REGISTER_COMMAND = "INSCRIRE";
+    // public final static String LOAD_COMMAND = "CHARGER";
+    // private final ServerSocket server;
+    // private Socket client;
+    // private ObjectInputStream objectInputStream;
+    // private ObjectOutputStream objectOutputStream;
+    // private final ArrayList<EventHandler> handlers;
 
-    public final static String REGISTER_COMMAND = "INSCRIRE";
-    public final static String LOAD_COMMAND = "CHARGER";
-    private final ServerSocket server;
-    private Socket client;
-    private ObjectInputStream objectInputStream;
-    private ObjectOutputStream objectOutputStream;
-    private final ArrayList<EventHandler> handlers;
+    /**
+     * Constructeur
+     * 
+     * @param port
+     * @throws IOException
+     */
+    // public Server(int port) throws IOException {
+    // this.server = new ServerSocket(port, 1);
+    // this.handlers = new ArrayList<EventHandler>();
+    // this.addEventHandler(this::handleEvents); // Question : c'est quoi
+    // handleEvents ?
+    // }
 
-    public Server(int port) throws IOException {
-        this.server = new ServerSocket(port, 1);
-        this.handlers = new ArrayList<EventHandler>();
-        this.addEventHandler(this::handleEvents);
-    }
+    /**
+     * Ajoute ..
+     * 
+     * @param h
+     */
+    // public void addEventHandler(EventHandler h) {
+    // this.handlers.add(h);
+    // }
 
-    public void addEventHandler(EventHandler h) {
-        this.handlers.add(h);
-    }
+    /**
+     * 
+     * @param cmd
+     * @param arg
+     */
+    // private void alertHandlers(String cmd, String arg) {
+    // for (EventHandler h : this.handlers) {
+    // h.handle(cmd, arg);
+    // }
+    // }
 
-    private void alertHandlers(String cmd, String arg) {
-        for (EventHandler h : this.handlers) {
-            h.handle(cmd, arg);
-        }
-    }
+    /**
+     * ouvre la connection pour attandre un client
+     */
 
-    public void run() {
-        while (true) {
-            try {
-                client = server.accept();
-                System.out.println("Connecté au client: " + client);
-                objectInputStream = new ObjectInputStream(client.getInputStream());
-                objectOutputStream = new ObjectOutputStream(client.getOutputStream());
-                listen();
-                disconnect();
-                System.out.println("Client déconnecté!");
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-    }
+    // public void run() {
+    // while (true) {
+    // try {
+    // client = server.accept();
+    // System.out.println("Connecté au client: " + client);
+    // objectInputStream = new ObjectInputStream(client.getInputStream());
+    // objectOutputStream = new ObjectOutputStream(client.getOutputStream());
+    // listen();
+    // disconnect();
+    // System.out.println("Client déconnecté!");
+    // } catch (Exception e) {
+    // e.printStackTrace();
+    // }
+    // }
+    // }
 
-    public void listen() throws IOException, ClassNotFoundException {
-        String line;
-        if ((line = this.objectInputStream.readObject().toString()) != null) {
-            Pair<String, String> parts = processCommandLine(line);
-            String cmd = parts.getKey();
-            String arg = parts.getValue();
-            this.alertHandlers(cmd, arg);
-        }
-    }
+    /**
+     * 
+     * @throws IOException
+     * @throws ClassNotFoundException
+     */
+    // public void listen() throws IOException, ClassNotFoundException {
+    // String line;
+    // if ((line = this.objectInputStream.readObject().toString()) != null) {
+    // Pair<String, String> parts = processCommandLine(line);
+    // String cmd = parts.getKey();
+    // String arg = parts.getValue();
+    // this.alertHandlers(cmd, arg);
+    // }
+    // }
 
     public Pair<String, String> processCommandLine(String line) {
         String[] parts = line.split(" ");
         String cmd = parts[0];
-        String args = String.join(" ", Arrays.asList(parts).subList(1, parts.length));
+        String args = String.join(" ", Arrays.asList(parts).subList(1,
+                parts.length));
         return new Pair<>(cmd, args);
     }
 
-    public void disconnect() throws IOException {
-        objectOutputStream.close();
-        objectInputStream.close();
-        client.close();
-    }
+    // public void disconnect() throws IOException {
+    // objectOutputStream.close();
+    // objectInputStream.close();
+    // client.close();
+    // }
 
-    public void handleEvents(String cmd, String arg) {
-        if (cmd.equals(REGISTER_COMMAND)) {
-            handleRegistration();
-        } else if (cmd.equals(LOAD_COMMAND)) {
-            handleLoadCourses(arg);
-        }
-    }
+    // public void handleEvents(String cmd, String arg) {
+    // if (cmd.equals(REGISTER_COMMAND)) {
+    // handleRegistration();
+    // } else if (cmd.equals(LOAD_COMMAND)) {
+    // handleLoadCourses(arg);
+    // }
+    // }
 
     /**
      * Lire un fichier texte contenant des informations sur les cours et les
@@ -99,13 +132,16 @@ public class Server {
     public void handleLoadCourses(String arg) {
         // TODO: implémenter cette méthode
         try {
-            FileReader infoCours = new FileReader("./data/cours.txt");
+            FileReader infoCours = new FileReader("IFT1025-TP2-server-main/src/main/java/server/data/cours.txt");
 
             BufferedReader reader = new BufferedReader(infoCours);
 
-            String s = reader.readLine();
+            String s;
 
-            System.out.println(s);
+            while ((s = reader.readLine()) != null) {
+                // System.out.println(s);
+                
+            }
 
             reader.close();
 
@@ -126,7 +162,4 @@ public class Server {
         // TODO: implémenter cette méthode
     }
 
-    public static void main(String[] args) {
-
-    }
 }

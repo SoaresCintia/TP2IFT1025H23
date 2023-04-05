@@ -1,0 +1,102 @@
+2023.03.31 17:00:32 INFO  Started: Metals version 0.11.11 in workspace '/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2' for client Visual Studio Code 1.77.0.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/Users/cintia/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.31 17:00:33 INFO  time: initialize in 1.26s
+2023.03.31 17:00:37 WARN  Build server is not auto-connectable.
+2023.03.31 17:00:37 WARN  no build tool detected in workspace '/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.03.31 17:00:37 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:00:42 INFO  time: code lens generation in 3.61s
+2023.03.31 17:00:52 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/ServerLauncher.java
+2023.03.31 17:00:59 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/TestServer.java
+2023.03.31 17:01:04 INFO  time: code lens generation in 2.78s
+2023.03.31 17:01:31 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:03:01 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/TestServer.java
+2023.03.31 17:09:33 INFO  Shutting down server
+2023.03.31 17:09:33 INFO  shutting down Metals
+2023.03.31 17:09:33 INFO  Exiting server
+2023.03.31 17:20:35 INFO  Started: Metals version 0.11.11 in workspace '/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2' for client Visual Studio Code 1.77.0.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/Users/cintia/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.31 17:20:38 INFO  time: initialize in 2.75s
+2023.03.31 17:20:42 WARN  Build server is not auto-connectable.
+2023.03.31 17:20:42 WARN  no build tool detected in workspace '/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.03.31 17:20:42 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/ServerLauncher.java
+Mar. 31, 2023 5:20:43 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+Mar. 31, 2023 5:20:43 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+2023.03.31 17:20:50 INFO  time: code lens generation in 6.87s
+2023.03.31 17:20:50 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/ServerLauncher.java
+Mar. 31, 2023 5:20:50 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+Mar. 31, 2023 5:20:50 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9
+2023.03.31 17:20:50 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/ServerLauncher.java
+Mar. 31, 2023 5:20:50 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+Mar. 31, 2023 5:20:50 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14
+Mar. 31, 2023 5:20:50 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12
+Mar. 31, 2023 5:21:14 P.M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar. 31, 2023 5:21:14 P.M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.03.31 17:22:11 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:22:15 INFO  time: code lens generation in 2.16s
+2023.03.31 17:22:41 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:23:01 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:23:03 INFO  time: code lens generation in 2.03s
+2023.03.31 17:26:01 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/TestServer.java
+2023.03.31 17:26:03 INFO  time: code lens generation in 1.98s
+2023.03.31 17:27:34 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:27:38 INFO  time: code lens generation in 1.51s
+2023.03.31 17:27:43 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:31:30 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:32:26 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:33:10 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:33:13 INFO  time: code lens generation in 3.3s
+2023.03.31 17:33:54 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+Mar. 31, 2023 5:34:01 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 318
+2023.03.31 17:34:05 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:34:42 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:35:27 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:35:53 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/TestServer.java
+2023.03.31 17:39:01 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:39:03 INFO  time: code lens generation in 2.47s
+2023.03.31 17:39:15 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:40:23 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:40:26 INFO  time: code lens generation in 2.38s
+2023.03.31 17:40:34 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:40:37 INFO  time: code lens generation in 2.26s
+2023.03.31 17:42:35 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:42:39 INFO  time: code lens generation in 2.84s
+2023.03.31 17:43:19 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.03.31 17:43:22 INFO  time: code lens generation in 2.4s
+2023.03.31 18:02:33 INFO  Shutting down server
+2023.03.31 18:02:33 INFO  shutting down Metals
+2023.03.31 18:02:33 INFO  Exiting server
+2023.04.04 09:42:42 INFO  Started: Metals version 0.11.11 in workspace '/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2' for client Visual Studio Code 1.77.0.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/Users/cintia/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.04.04 09:42:44 INFO  time: initialize in 1.68s
+2023.04.04 09:42:48 WARN  Build server is not auto-connectable.
+2023.04.04 09:42:48 WARN  no build tool detected in workspace '/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.04.04 09:42:48 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.04 09:42:51 INFO  time: code lens generation in 3.42s
+2023.04.04 09:44:28 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.04 09:44:29 INFO  Shutting down server
+2023.04.04 09:44:29 INFO  shutting down Metals
