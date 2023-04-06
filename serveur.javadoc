@@ -1,0 +1,167 @@
+package server;
+
+import javafx.util.Pair;
+
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+/**
+ * Cette classe représente le serveur qui écoute les connexions des clients et gère les requêtes des clients.
+ * Elle implémente l'interface 'EventHandler' qui définit une méthode 'handle' qui est appelée par le serveur
+ * pour traiter les requêtes des clients.
+ * Le serveur écoute les connexions des clients sur un port spécifié en argument du constructeur.
+ * Le serveur lit les requêtes des clients en utilisant un flux d'entrée et les traite en utilisant la méthode 'handleEvents'.
+ * Le serveur envoie les réponses aux clients en utilisant un flux de sortie.
+ * Le serveur gère les exceptions si une erreur se produit lors de la lecture ou de l'écriture dans les flux.
+ */
+public class Server {
+
+    /**
+     * Cette interface définit une méthode 'handle' qui est appelée par le serveur pour traiter les requêtes des clients.
+     * La méthode 'handle' prend deux arguments: la commande et les arguments de la commande.
+     */
+    
+    /** La commande pour inscrire un étudiant. */
+    public final static String REGISTER_COMMAND = "INSCRIRE";
+
+    /** La commande pour charger les cours d'une session. */
+    public final static String LOAD_COMMAND = "CHARGER";
+    
+    private final ServerSocket server;
+    private Socket client;
+    private ObjectInputStream objectInputStream;
+    private ObjectOutputStream objectOutputStream;
+    private final ArrayList<EventHandler> handlers;
+
+    /**
+     * Construire un serveur qui écoute les connexions des clients sur le port spécifié en argument.
+     * @param port le port sur lequel le serveur écoute les connexions des clients
+     * @throws IOException si une erreur se produit lors de la création du serveur
+     */
+    public Server(int port) throws IOException {
+        this.server = new ServerSocket(port, 1);
+        this.handlers = new ArrayList<EventHandler>();
+        this.addEventHandler(this::handleEvents);
+    }
+
+    /**
+     * Ajouter un gestionnaire d'événements (EventHandler) pour traiter les requêtes des clients.
+     * @param h le gestionnaire d'événements (EventHandler) à ajouter
+     */
+    public void addEventHandler(EventHandler h) {
+        this.handlers.add(h);
+    }
+    
+    /**
+     * Appeler la méthode 'handle' de tous les gestionnaires d'événements (EventHandler) en passant la commande et les arguments de la commande.
+     * @param cmd la commande
+     * @param arg les arguments de la commande
+     */
+    private void alertHandlers(String cmd, String arg) {
+        for (EventHandler h : this.handlers) {
+            h.handle(cmd, arg);
+        }
+    }
+
+    /** 
+     * Cette méthode est appelée par le thread du serveur pour traiter les requêtes des clients.
+     * Elle lit les requêtes des clients en utilisant un flux d'entrée et les traite en utilisant la méthode 'handleEvents'.
+     * Elle envoie les réponses aux clients en utilisant un flux de sortie.
+     * Elle gère les exceptions si une erreur se produit lors de la lecture ou de l'écriture dans les flux.
+     */
+    public void run() {
+        while (true) {
+            try {
+                client = server.accept();
+                System.out.println("Connecté au client: " + client);
+                objectInputStream = new ObjectInputStream(client.getInputStream());
+                objectOutputStream = new ObjectOutputStream(client.getOutputStream());
+                listen();
+                disconnect();
+                System.out.println("Client déconnecté!");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * Cette méthode lit les requêtes des clients en utilisant un flux d'entrée et les traite en utilisant la méthode 'handleEvents'.
+     * Elle gère les exceptions si une erreur se produit lors de la lecture dans le flux.
+     * @throws IOException si une erreur se produit lors de la lecture dans le flux
+     * @throws ClassNotFoundException si une erreur se produit lors de la lecture dans le flux
+     */
+    public void listen() throws IOException, ClassNotFoundException {
+        String line;
+        if ((line = this.objectInputStream.readObject().toString()) != null) {
+            Pair<String, String> parts = processCommandLine(line);
+            String cmd = parts.getKey();
+            String arg = parts.getValue();
+            this.alertHandlers(cmd, arg);
+        }
+    }
+
+    /**
+     * Cette méthode sépare la commande et les arguments de la commande d'une requête du client.
+     * @param line la requête du client
+     * @return un objet 'Pair' contenant la commande et les arguments de la commande
+     */
+    public Pair<String, String> processCommandLine(String line) {
+        String[] parts = line.split(" ");
+        String cmd = parts[0];
+        String args = String.join(" ", Arrays.asList(parts).subList(1, parts.length));
+        return new Pair<>(cmd, args);
+    }
+
+    /** 
+     * Cette méthode est appelée par la méthode 'listen' pour traiter la commande 'INSCRIRE'.
+     * Elle gère les exceptions si une erreur se produit lors de l'écriture de l'objet dans le flux.
+     * Elle deconnecte le client en fermant les flux de donnees et la socket.
+     */
+    public void disconnect() throws IOException {
+        objectOutputStream.close();
+        objectInputStream.close();
+        client.close();
+    }
+
+
+    /**
+     * Cette méthode est appelée par la méthode 'listen' pour traiter la commande recue par le client 'INSCRIRE' ou 'CHARGER'.
+     * Si la commande est 'INSCRIRE', elle appelle la méthode 'handleRegistration ()'.
+     * Si la commande est 'CHARGER', elle appelle la méthode 'handleLoadCourses (arg)'.
+     * @param cmd la commande recue du client
+     * @param arg les arguments de la commande
+     */
+    public void handleEvents(String cmd, String arg) {
+        if (cmd.equals(REGISTER_COMMAND)) {
+            handleRegistration();
+        } else if (cmd.equals(LOAD_COMMAND)) {
+            handleLoadCourses(arg);
+        }
+    }
+
+    /**
+     Lire un fichier texte contenant des informations sur les cours et les transofmer en liste d'objets 'Course'.
+     La méthode filtre les cours par la session spécifiée en argument.
+     Ensuite, elle renvoie la liste des cours pour une session au client en utilisant l'objet 'objectOutputStream'.
+     La méthode gère les exceptions si une erreur se produit lors de la lecture du fichier ou de l'écriture de l'objet dans le flux.
+     @param arg la session pour laquelle on veut récupérer la liste des cours
+     */
+    public void handleLoadCourses(String arg) {
+        // TODO: implémenter cette méthode
+    }
+
+    /**
+     Récupérer l'objet 'RegistrationForm' envoyé par le client en utilisant 'objectInputStream', l'enregistrer dans un fichier texte
+     et renvoyer un message de confirmation au client.
+     La méthode gére les exceptions si une erreur se produit lors de la lecture de l'objet, l'écriture dans un fichier ou dans le flux de sortie.
+     */
+    public void handleRegistration() {
+        // TODO: implémenter cette méthode
+    }
+}
