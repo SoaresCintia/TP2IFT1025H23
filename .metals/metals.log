@@ -1808,3 +1808,9 @@ Apr. 06, 2023 3:12:45 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancel
 WARNING: Unmatched cancel notification for request id 3721
 2023.04.06 15:12:56 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
 2023.04.06 15:13:14 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.06 15:21:07 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/ClientSimple.java
+2023.04.06 15:21:08 INFO  time: code lens generation in 1.05s
+2023.04.06 15:21:21 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/ClientSimple.java
+2023.04.06 15:47:09 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/ClientSimple.java
+2023.04.06 15:47:12 INFO  time: code lens generation in 2.9s
+2023.04.06 15:50:26 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/ClientSimple.java
