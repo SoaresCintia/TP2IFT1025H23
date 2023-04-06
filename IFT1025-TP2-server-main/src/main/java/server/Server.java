@@ -136,11 +136,20 @@ public class Server {
 
             BufferedReader reader = new BufferedReader(infoCours);
 
-            String s;
+            String line;
+            ArrayList<Course> courses = new ArrayList<Course>();
+            // select only line with arg
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(" ");
+                // System.out.println(parts[2]); // parts[2] contient les sessions
+                if (parts[2].equals(arg)) {
+                    Course course = new Course(parts[0], parts[1], parts[2]);
+                    courses.add(course);
+                }
+                System.out.println(courses);
+                // voir debogueur -> il parrait qu'il y a plusieurs fois le meme cours dans
+                // courses
 
-            while ((s = reader.readLine()) != null) {
-                // System.out.println(s);
-                
             }
 
             reader.close();
