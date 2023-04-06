@@ -1,9 +1,13 @@
 package server;
 
 import javafx.util.Pair;
+import server.models.RegistrationForm;
+
 import java.util.*;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -131,25 +135,26 @@ public class Server {
      */
     public void handleLoadCourses(String arg) {
         // TODO: implémenter cette méthode
+        // ArrayList<Course> courses = new ArrayList<Course>();
+
+        Courses courses = new Courses();
+
         try {
             FileReader infoCours = new FileReader("IFT1025-TP2-server-main/src/main/java/server/data/cours.txt");
 
             BufferedReader reader = new BufferedReader(infoCours);
 
             String line;
-            ArrayList<Course> courses = new ArrayList<Course>();
+            Course course;
+
             // select only line with arg
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(" ");
-                // System.out.println(parts[2]); // parts[2] contient les sessions
-                if (parts[2].equals(arg)) {
-                    Course course = new Course(parts[0], parts[1], parts[2]);
+
+                if (parts[2].equals(arg)) {// parts[2] has sections
+                    course = new Course(parts[0], parts[1], parts[2]);
                     courses.add(course);
                 }
-                System.out.println(courses);
-                // voir debogueur -> il parrait qu'il y a plusieurs fois le meme cours dans
-                // courses
-
             }
 
             reader.close();
@@ -158,6 +163,23 @@ public class Server {
             // TODO: handle exception
             System.out.println("Erreur dans l'ouverture du fichier");
         }
+
+        try {
+            FileOutputStream fileOs = new FileOutputStream("courses.dat");
+
+            ObjectOutputStream os = new ObjectOutputStream(fileOs);
+
+            os.writeObject(courses);
+
+            os.close();
+
+        } catch (IOException ex) {
+            System.out.println("Erreur à l'écriture");
+
+        }
+
+        // Todo : renvoier la liste des cours pour une session au client en utilisant
+        // l'objet 'objectOutputStream'.
     }
 
     /**
@@ -169,6 +191,17 @@ public class Server {
      */
     public void handleRegistration() {
         // TODO: implémenter cette méthode
+
+        try {
+            FileInputStream fileIs = new FileInputStream("registrationForm.dat");
+            ObjectInputStream is = new ObjectInputStream(fileIs);
+
+            RegistrationForm registrationForm = (RegistrationForm) is.readObject();
+
+        } catch (IOException e) {
+            // TODO: handle exception
+        }
+
     }
 
 }

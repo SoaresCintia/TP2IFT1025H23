@@ -1,6 +1,8 @@
 package server;
 
-public class Course {
+import java.io.Serializable;
+
+public class Course implements Serializable {
     private String sigle;
     private String nom;
     private String session;
