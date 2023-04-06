@@ -23,7 +23,7 @@ public class Server {
 
     /**
      * Cette interface definit une methode 'handle' qui est appelee par le serveur pour traiter les requetes des clients.
-     * La methode 'handle' prend deux arguemnts: la commande et les arguments de la commande.
+     * La methode 'handle' prend deux arguments: la commande et les arguments de la commande.
      */ 
 
 
