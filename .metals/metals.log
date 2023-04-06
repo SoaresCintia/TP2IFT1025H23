@@ -1653,3 +1653,158 @@ WARNING: Unmatched cancel notification for request id 2152
 2023.04.06 14:37:01 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
 Apr. 06, 2023 2:37:06 P.M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2023.04.06 14:38:06 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/models/RegistrationForm.java
+2023.04.06 14:38:08 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.06 14:39:20 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.06 14:39:21 WARN  Running javac-semanticdb failed for file:///Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java. Output:
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:42: error: illegal start of type
+    this.server=new ServerSocket(port,1);this.handlers=new ArrayList<EventHandler>();this.addEventHandler(this::handleEvents); //
+    ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:42: error: ';' expected
+    this.server=new ServerSocket(port,1);this.handlers=new ArrayList<EventHandler>();this.addEventHandler(this::handleEvents); //
+        ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:42: error: <identifier> expected
+    this.server=new ServerSocket(port,1);this.handlers=new ArrayList<EventHandler>();this.addEventHandler(this::handleEvents); //
+               ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:42: error: illegal start of type
+    this.server=new ServerSocket(port,1);this.handlers=new ArrayList<EventHandler>();this.addEventHandler(this::handleEvents); //
+                                         ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:42: error: ';' expected
+    this.server=new ServerSocket(port,1);this.handlers=new ArrayList<EventHandler>();this.addEventHandler(this::handleEvents); //
+                                             ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:42: error: <identifier> expected
+    this.server=new ServerSocket(port,1);this.handlers=new ArrayList<EventHandler>();this.addEventHandler(this::handleEvents); //
+                                                      ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:42: error: illegal start of type
+    this.server=new ServerSocket(port,1);this.handlers=new ArrayList<EventHandler>();this.addEventHandler(this::handleEvents); //
+                                                                                     ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:42: error: ';' expected
+    this.server=new ServerSocket(port,1);this.handlers=new ArrayList<EventHandler>();this.addEventHandler(this::handleEvents); //
+                                                                                         ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:42: error: invalid method declaration; return type required
+    this.server=new ServerSocket(port,1);this.handlers=new ArrayList<EventHandler>();this.addEventHandler(this::handleEvents); //
+                                                                                          ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:42: error: illegal start of type
+    this.server=new ServerSocket(port,1);this.handlers=new ArrayList<EventHandler>();this.addEventHandler(this::handleEvents); //
+                                                                                                          ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:42: error: ',', ')', or '[' expected
+    this.server=new ServerSocket(port,1);this.handlers=new ArrayList<EventHandler>();this.addEventHandler(this::handleEvents); //
+                                                                                                              ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:100: error: class, interface, enum, or record expected
+    public Pair<String, String> processCommandLine(String line) {
+           ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:102: error: class, interface, enum, or record expected
+        String cmd = parts[0];
+        ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:103: error: class, interface, enum, or record expected
+        String args = String.join(" ", Arrays.asList(parts).subList(1,
+        ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:105: error: class, interface, enum, or record expected
+        return new Pair<>(cmd, args);
+        ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:106: error: class, interface, enum, or record expected
+    }
+    ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:133: error: class, interface, enum, or record expected
+    public void handleLoadCourses(String arg) {
+           ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:139: error: class, interface, enum, or record expected
+        try {
+        ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:142: error: class, interface, enum, or record expected
+            BufferedReader reader = new BufferedReader(infoCours);
+            ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:144: error: class, interface, enum, or record expected
+            String line;
+            ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:145: error: class, interface, enum, or record expected
+            Course course;
+            ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:148: error: class, interface, enum, or record expected
+            while ((line = reader.readLine()) != null) {
+            ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:151: error: class, interface, enum, or record expected
+                if (parts[2].equals(arg)) {// parts[2] has sections
+                ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:153: error: class, interface, enum, or record expected
+                    courses.add(course);
+                    ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:154: error: class, interface, enum, or record expected
+                }
+                ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:159: error: class, interface, enum, or record expected
+        } catch (IOException e) {
+        ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:162: error: class, interface, enum, or record expected
+        }
+        ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:167: error: class, interface, enum, or record expected
+            ObjectOutputStream os = new ObjectOutputStream(fileOs);
+            ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:169: error: class, interface, enum, or record expected
+            os.writeObject(courses);
+            ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:171: error: class, interface, enum, or record expected
+            os.close();
+            ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:173: error: class, interface, enum, or record expected
+        } catch (IOException ex) {
+        ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:176: error: class, interface, enum, or record expected
+        }
+        ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:189: error: class, interface, enum, or record expected
+    public void handleRegistration() {
+           ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:194: error: class, interface, enum, or record expected
+            ObjectInputStream is = new ObjectInputStream(fileIs);
+            ^
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java:198: error: class, interface, enum, or record expected
+        } catch (IOException e) {
+        ^
+35 errors
+2023.04.06 14:39:24 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.06 14:39:27 INFO  time: code lens generation in 2.86s
+2023.04.06 14:39:34 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.06 14:39:37 INFO  time: code lens generation in 2.12s
+2023.04.06 14:39:46 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.06 14:39:49 INFO  time: code lens generation in 2.4s
+2023.04.06 14:39:50 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+Apr. 06, 2023 2:40:18 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2496
+2023.04.06 14:40:22 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.06 14:40:25 INFO  time: code lens generation in 3.05s
+2023.04.06 14:40:41 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.06 14:40:44 INFO  time: code lens generation in 2.94s
+Apr. 06, 2023 2:40:47 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2567
+Apr. 06, 2023 2:40:49 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2577
+2023.04.06 14:40:53 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.06 14:40:56 INFO  time: code lens generation in 2.44s
+Apr. 06, 2023 2:40:58 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2604
+2023.04.06 14:41:07 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.06 14:41:09 INFO  time: code lens generation in 2.61s
+2023.04.06 14:42:13 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/ServerLauncher.java
+2023.04.06 14:42:16 INFO  time: code lens generation in 2.71s
+2023.04.06 14:42:21 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/ServerLauncher.java
+2023.04.06 14:42:23 INFO  time: code lens generation in 1.28s
+2023.04.06 14:45:19 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.06 14:45:21 INFO  time: code lens generation in 2.17s
+2023.04.06 14:45:52 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.06 14:46:35 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/models/RegistrationForm.java
+Apr. 06, 2023 2:51:33 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3061
+2023.04.06 14:51:37 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.06 14:51:40 INFO  time: code lens generation in 2.32s
+2023.04.06 14:59:24 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.06 14:59:27 INFO  time: code lens generation in 2.57s
+2023.04.06 14:59:36 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.06 15:00:58 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.06 15:09:47 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/models/RegistrationForm.java
+2023.04.06 15:12:39 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+Apr. 06, 2023 3:12:45 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3721
+2023.04.06 15:12:56 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.06 15:13:14 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java

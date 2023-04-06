@@ -5,12 +5,12 @@ public class ServerLauncher {
 
     public static void main(String[] args) {
         Server server;
-        // try {
-        // server = new Server(PORT);//
-        // System.out.println("Server is running...");
-        // server.run();
-        // } catch (Exception e) {
-        // e.printStackTrace();
-        // }
+        try {
+            server = new Server(PORT);//
+            System.out.println("Server is running...");
+            server.run();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
