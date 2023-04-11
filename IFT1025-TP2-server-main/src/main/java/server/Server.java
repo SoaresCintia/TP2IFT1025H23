@@ -1,6 +1,7 @@
 package server;
 
 import javafx.util.Pair;
+import server.models.Course;
 import server.models.RegistrationForm;
 
 import java.util.*;
@@ -13,6 +14,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -42,7 +44,7 @@ public class Server {
     public Server(int port) throws IOException {
         this.server = new ServerSocket(port, 1);
         this.handlers = new ArrayList<EventHandler>();
-        this.addEventHandler(this::handleEvents); //
+        this.addEventHandler(this::handleEvents); // c'est quoi :: ?
     }
 
     /**
@@ -97,7 +99,9 @@ public class Server {
             String cmd = parts.getKey();
             String arg = parts.getValue();
             this.alertHandlers(cmd, arg);
+
         }
+
     }
 
     public Pair<String, String> processCommandLine(String line) {
@@ -134,52 +138,41 @@ public class Server {
      * @param arg la session pour laquelle on veut récupérer la liste des cours
      */
     public void handleLoadCourses(String arg) {
-        // TODO: implémenter cette méthode
-        // ArrayList<Course> courses = new ArrayList<Course>();
-
-        Courses courses = new Courses();
+        ArrayList<Course> courses = new ArrayList<Course>();
 
         try {
-            FileReader infoCours = new FileReader("IFT1025-TP2-server-main/src/main/java/server/data/cours.txt");
+            FileReader infoCours = new FileReader(
+                    "IFT1025-TP2-server-main/src/main/java/server/data/cours.txt");
 
             BufferedReader reader = new BufferedReader(infoCours);
 
             String line;
-            Course course;
 
-            // select only line with arg
             while ((line = reader.readLine()) != null) {
+
                 String[] parts = line.split(" ");
 
-                if (parts[2].equals(arg)) {// parts[2] has sections
-                    course = new Course(parts[0], parts[1], parts[2]);
-                    courses.add(course);
+                if (parts[2].equals(arg)) {
+
+                    courses.add(new Course(parts[0], parts[1], parts[2]));
                 }
             }
 
             reader.close();
 
-        } catch (IOException e) {
-            // TODO: handle exception
+        } catch (IOException ex) {
             System.out.println("Erreur dans l'ouverture du fichier");
         }
 
         try {
-            FileOutputStream fileOs = new FileOutputStream("courses.dat");
-
-            ObjectOutputStream os = new ObjectOutputStream(fileOs);
-
-            os.writeObject(courses);
-
-            os.close();
+            objectOutputStream.writeObject("courses");
 
         } catch (IOException ex) {
             System.out.println("Erreur à l'écriture");
+            ex.printStackTrace();
 
         }
 
-        // Todo : renvoier la liste des cours pour une session au client en utilisant
-        // l'objet 'objectOutputStream'.
     }
 
     /**
