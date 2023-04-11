@@ -75,7 +75,6 @@ public class Client {
 
             ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
 
-            // Problème ici :
             ArrayList<Course> courses = (ArrayList<Course>) objectInputStream.readObject();
 
             System.out.println(courses.size());
@@ -86,6 +85,9 @@ public class Client {
 
         } catch (ClassNotFoundException ex) {
             System.out.println("La classe lue n'existe pas dans le programme");
+            ex.printStackTrace();
+        } catch (ClassCastException ex) {
+            System.out.println("Problème dans le cast");
             ex.printStackTrace();
         }
     }
