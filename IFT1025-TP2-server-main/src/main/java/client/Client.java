@@ -21,6 +21,8 @@ public class Client {
     public final static String LOAD_COMMAND = "CHARGER";
     private final Socket clientSocket;
 
+    private Scanner scanner;
+
     public Client(int port) throws UnknownHostException, IOException {
         clientSocket = new Socket("127.0.0.1", port);
     }
@@ -38,13 +40,69 @@ public class Client {
      */
     public void charger() throws IOException {
         System.out.println("***Bienvenue au portail d'inscription de cours de l'UdeM***");
+
+        String session = this.displaySessions();
+
+        System.out.println("Les cours offerts pendant la session d'" + session + " sont");
+
+        OutputStream outputStream = clientSocket.getOutputStream();
+        ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
+
+        String arg = LOAD_COMMAND + " " + session;
+        objectOutputStream.writeObject(arg);
+
+        try {
+
+            InputStream inputStream = clientSocket.getInputStream();
+            ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
+            ArrayList<Course> courses = (ArrayList<Course>) objectInputStream.readObject();
+
+            displayCourses(courses);
+
+        } catch (IOException e) {
+            System.out.println("Erreur à l'ouverture du fichier ou objet");
+        } catch (ClassNotFoundException ex) {
+            System.out.println("La classe lue n'existe pas dans le programme");
+            ex.printStackTrace();
+        } catch (ClassCastException ex) {
+            System.out.println("Problème dans le cast");
+            ex.printStackTrace();
+        }
+    }
+
+    private String displaySessions() {
         System.out.println("Veuillez choisir la session pour laquelle vous voulez consulter la liste des cours:");
         System.out.println("1. Automne");
         System.out.println("2. Hiver");
         System.out.println("3. Ete");
         System.out.print("Choix: ");
 
-        Scanner scanner = new Scanner(System.in);
+        scanner = new Scanner(System.in);
+
+        int choix = scanner.nextInt();
+
+        // String session;
+        switch (choix) {
+            case 1:
+                return "Automne";
+            case 2:
+                return "Hiver";
+            default:
+                return "Ete";
+        }
+    }
+
+    private void displayCourses(ArrayList<Course> courses) {
+        for (int i = 0; i < courses.size(); i++) {
+            int j = i + 1;
+            System.out.println(j + ". " + courses.get(i).getName() + "  " + courses.get(i).getCode());
+        }
+    }
+
+    private void chooseCoursesInscription() {
+        System.out.println("Choix:");
+
+        scanner = new Scanner(System.in);
 
         int choix = scanner.nextInt();
 
@@ -61,35 +119,6 @@ public class Client {
                 break;
         }
 
-        System.out.println("Les cours offerts pendant la session d'" + session + " sont");
-
-        OutputStream outputStream = clientSocket.getOutputStream();
-        ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
-
-        String arg = LOAD_COMMAND + " " + session;
-        objectOutputStream.writeObject(arg);
-
-        try {
-
-            InputStream inputStream = clientSocket.getInputStream();
-
-            ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
-
-            ArrayList<Course> courses = (ArrayList<Course>) objectInputStream.readObject();
-
-            System.out.println(courses.size());
-
-        } catch (IOException e) {
-            // TODO: handle exception
-            System.out.println("Erreur à l'ouverture du fichier ou objet");
-
-        } catch (ClassNotFoundException ex) {
-            System.out.println("La classe lue n'existe pas dans le programme");
-            ex.printStackTrace();
-        } catch (ClassCastException ex) {
-            System.out.println("Problème dans le cast");
-            ex.printStackTrace();
-        }
     }
 
     // F2: une deuxième fonctionnalité qui permet au client de faire une demande d’
