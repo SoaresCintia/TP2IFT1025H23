@@ -28,14 +28,12 @@ public class Client {
         clientSocket = new Socket("127.0.0.1", port);
     }
 
-    public void charger() throws IOException {
-        System.out.println("***Bienvenue au portail d'inscription de cours de l'UdeM***");
+    public void charger(String session) throws IOException {
 
-        displaySessions();
-
+        sendServer(session);
         displayCourses(courses);
 
-        chooseCoursesInscription();
+        // chooseCoursesInscription();
 
     }
 
@@ -64,35 +62,6 @@ public class Client {
 
     }
 
-    private void displaySessions() throws IOException {
-        System.out.println("Veuillez choisir la session pour laquelle vous voulez consulter la liste des cours:");
-        System.out.println("1. Automne");
-        System.out.println("2. Hiver");
-        System.out.println("3. Ete");
-        System.out.print("Choix: ");
-
-        scanner = new Scanner(System.in);
-
-        int choix = scanner.nextInt();
-
-        String session;
-        switch (choix) {
-            case 1:
-                session = "Automne";
-                break;
-            case 2:
-                session = "Hiver";
-                break;
-            default:
-                session = "Ete";
-                break;
-        }
-
-        System.out.println("Les cours offerts pendant la session d'" + session + " sont");
-
-        sendServer(session);
-    }
-
     private void displayCourses(ArrayList<Course> courses) {
         for (int i = 0; i < courses.size(); i++) {
             int j = i + 1;
@@ -100,25 +69,25 @@ public class Client {
         }
     }
 
-    private void chooseCoursesInscription() throws IOException {
-        System.out.println("Choix:");
+    // private void chooseCoursesInscription() throws IOException {
+    // System.out.println("Choix:");
 
-        System.out.println("1. Consulter les cours offerts pour une autre session");
-        System.out.println("2. Inscription à un cours");
+    // System.out.println("1. Consulter les cours offerts pour une autre session");
+    // System.out.println("2. Inscription à un cours");
 
-        scanner = new Scanner(System.in);
-        int choice = scanner.nextInt();
+    // scanner = new Scanner(System.in);
+    // int choice = scanner.nextInt();
 
-        switch (choice) {
-            case 1:
-                this.displaySessions();
-                break;
-            default:
-                this.inscription();
-                break;
-        }
+    // switch (choice) {
+    // case 1:
+    // this.displaySessions();
+    // break;
+    // default:
+    // this.inscription();
+    // break;
+    // }
 
-    }
+    // }
 
     public void inscription() {
 
