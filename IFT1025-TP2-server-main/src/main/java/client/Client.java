@@ -20,6 +20,7 @@ public class Client {
     public final static String REGISTER_COMMAND = "INSCRIRE";
     public final static String LOAD_COMMAND = "CHARGER";
     private final Socket clientSocket;
+    private ArrayList<Course> courses;
 
     private Scanner scanner;
 
@@ -27,24 +28,18 @@ public class Client {
         clientSocket = new Socket("127.0.0.1", port);
     }
 
-    /**
-     * // // F1: fonctionnalité qui permet au client de récupérer la liste
-     * // // des cours disponibles pour une session donnée.
-     * // // Le client envoie une requête charger au serveur.
-     * // // Le serveur doit récupérer la liste des cours du fichier cours.txt et
-     * // l’envoie
-     * // // au client.
-     * // // Le client récupère les cours et les affiche.
-     * 
-     * @throws IOException
-     */
     public void charger() throws IOException {
         System.out.println("***Bienvenue au portail d'inscription de cours de l'UdeM***");
 
-        String session = this.displaySessions();
+        displaySessions();
 
-        System.out.println("Les cours offerts pendant la session d'" + session + " sont");
+        displayCourses(courses);
 
+        chooseCoursesInscription();
+
+    }
+
+    private void sendServer(String session) throws IOException {
         OutputStream outputStream = clientSocket.getOutputStream();
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
 
@@ -55,9 +50,7 @@ public class Client {
 
             InputStream inputStream = clientSocket.getInputStream();
             ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
-            ArrayList<Course> courses = (ArrayList<Course>) objectInputStream.readObject();
-
-            displayCourses(courses);
+            courses = (ArrayList<Course>) objectInputStream.readObject();
 
         } catch (IOException e) {
             System.out.println("Erreur à l'ouverture du fichier ou objet");
@@ -68,39 +61,15 @@ public class Client {
             System.out.println("Problème dans le cast");
             ex.printStackTrace();
         }
+
     }
 
-    private String displaySessions() {
+    private void displaySessions() throws IOException {
         System.out.println("Veuillez choisir la session pour laquelle vous voulez consulter la liste des cours:");
         System.out.println("1. Automne");
         System.out.println("2. Hiver");
         System.out.println("3. Ete");
         System.out.print("Choix: ");
-
-        scanner = new Scanner(System.in);
-
-        int choix = scanner.nextInt();
-
-        // String session;
-        switch (choix) {
-            case 1:
-                return "Automne";
-            case 2:
-                return "Hiver";
-            default:
-                return "Ete";
-        }
-    }
-
-    private void displayCourses(ArrayList<Course> courses) {
-        for (int i = 0; i < courses.size(); i++) {
-            int j = i + 1;
-            System.out.println(j + ". " + courses.get(i).getName() + "  " + courses.get(i).getCode());
-        }
-    }
-
-    private void chooseCoursesInscription() {
-        System.out.println("Choix:");
 
         scanner = new Scanner(System.in);
 
@@ -119,23 +88,39 @@ public class Client {
                 break;
         }
 
+        System.out.println("Les cours offerts pendant la session d'" + session + " sont");
+
+        sendServer(session);
     }
 
-    // F2: une deuxième fonctionnalité qui permet au client de faire une demande d’
-    // inscription à un cours.
+    private void displayCourses(ArrayList<Course> courses) {
+        for (int i = 0; i < courses.size(); i++) {
+            int j = i + 1;
+            System.out.println(j + ". " + courses.get(i).getName() + "  " + courses.get(i).getCode());
+        }
+    }
 
-    // Le client envoie une requête inscription au serveur.
+    private void chooseCoursesInscription() throws IOException {
+        System.out.println("Choix:");
 
-    // Les informations suivantes sont données nécessaires (voir le format du
-    // fichier inscription.txt ci-dessus) en arguments. Le choix du cours doit être
-    // valide c.à.d le code du cours doit être présent dans la liste des cours
-    // disponibles dans la session en question. Le serveur ajoute la ligne
-    // correspondante au fichier inscription.txt et envoie un message de réussite au
-    // client.
+        System.out.println("1. Consulter les cours offerts pour une autre session");
+        System.out.println("2. Inscription à un cours");
 
-    // Le client affiche cemessage (ou celui de l’échec en cas d’exception).
+        scanner = new Scanner(System.in);
+        int choice = scanner.nextInt();
 
-    public void inscrire() {
+        switch (choice) {
+            case 1:
+                this.displaySessions();
+                break;
+            default:
+                this.inscription();
+                break;
+        }
+
+    }
+
+    public void inscription() {
 
     }
 

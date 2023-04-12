@@ -154,7 +154,7 @@ public class Server {
 
                 if (parts[2].equals(arg)) {
 
-                    courses.add(new Course(parts[0], parts[1], parts[2]));
+                    courses.add(new Course(parts[1], parts[0], parts[2]));
                 }
             }
 
@@ -165,7 +165,7 @@ public class Server {
         }
 
         try {
-            objectOutputStream.writeObject("courses");
+            objectOutputStream.writeObject(courses);
 
         } catch (IOException ex) {
             System.out.println("Erreur à l'écriture");
