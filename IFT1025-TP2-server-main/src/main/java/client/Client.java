@@ -14,30 +14,20 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import server.models.Course;
+import server.models.RegistrationForm;
 
 public class Client {
 
     public final static String REGISTER_COMMAND = "INSCRIRE";
     public final static String LOAD_COMMAND = "CHARGER";
     private final Socket clientSocket;
-    private ArrayList<Course> courses;
-
-    private Scanner scanner;
 
     public Client(int port) throws UnknownHostException, IOException {
         clientSocket = new Socket("127.0.0.1", port);
     }
 
-    public void charger(String session) throws IOException {
+    public ArrayList<Course> charger(String session, ArrayList<Course> courses) throws IOException {
 
-        sendServer(session);
-        displayCourses(courses);
-
-        // chooseCoursesInscription();
-
-    }
-
-    private void sendServer(String session) throws IOException {
         OutputStream outputStream = clientSocket.getOutputStream();
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
 
@@ -50,6 +40,8 @@ public class Client {
             ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
             courses = (ArrayList<Course>) objectInputStream.readObject();
 
+            // System.out.println(courses.get(0).getCode());
+
         } catch (IOException e) {
             System.out.println("Erreur à l'ouverture du fichier ou objet");
         } catch (ClassNotFoundException ex) {
@@ -59,37 +51,27 @@ public class Client {
             System.out.println("Problème dans le cast");
             ex.printStackTrace();
         }
+        return courses;
 
     }
 
-    private void displayCourses(ArrayList<Course> courses) {
+    public void displayCourses(ArrayList<Course> courses) {
         for (int i = 0; i < courses.size(); i++) {
             int j = i + 1;
             System.out.println(j + ". " + courses.get(i).getName() + "  " + courses.get(i).getCode());
         }
     }
 
-    // private void chooseCoursesInscription() throws IOException {
-    // System.out.println("Choix:");
+    public void inscription(RegistrationForm registrationForm, String session) throws IOException {
 
-    // System.out.println("1. Consulter les cours offerts pour une autre session");
-    // System.out.println("2. Inscription à un cours");
+        OutputStream outputStream = clientSocket.getOutputStream();
+        ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
 
-    // scanner = new Scanner(System.in);
-    // int choice = scanner.nextInt();
+        objectOutputStream.writeObject(REGISTER_COMMAND);
 
-    // switch (choice) {
-    // case 1:
-    // this.displaySessions();
-    // break;
-    // default:
-    // this.inscription();
-    // break;
-    // }
+        objectOutputStream.writeObject(session);
 
-    // }
-
-    public void inscription() {
+        objectOutputStream.writeObject(registrationForm);
 
     }
 
