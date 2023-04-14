@@ -4479,3 +4479,201 @@ WARNING: Unmatched cancel notification for request id 1568
 2023.04.12 13:09:20 INFO  time: code lens generation in 2.11s
 Apr. 12, 2023 1:09:49 P.M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2023.04.12 13:11:22 INFO  Shutting down server
+2023.04.12 13:11:22 INFO  shutting down Metals
+2023.04.12 13:11:22 INFO  Exiting server
+2023.04.12 17:57:40 INFO  Started: Metals version 0.11.11 in workspace '/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2' for client Visual Studio Code 1.77.0.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/Users/cintia/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.04.12 17:57:43 INFO  time: initialize in 2.73s
+2023.04.12 17:57:54 WARN  Build server is not auto-connectable.
+2023.04.12 17:57:54 WARN  no build tool detected in workspace '/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.04.12 17:57:54 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/ClientLaucher.java
+Apr. 12, 2023 5:57:55 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2023.04.12 17:58:01 INFO  time: code lens generation in 6.45s
+2023.04.12 17:58:57 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+2023.04.12 18:01:02 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/models/RegistrationForm.java
+2023.04.12 18:01:12 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java
+Apr. 12, 2023 6:02:10 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 142
+Apr. 12, 2023 6:02:16 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 164
+2023.04.12 18:04:54 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/Server.java
+Apr. 12, 2023 6:07:23 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 539
+Apr. 12, 2023 6:07:52 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 626
+Apr. 12, 2023 6:10:23 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 784
+2023.04.12 18:10:25 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java
+Apr. 12, 2023 6:15:34 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1298
+Apr. 12, 2023 6:15:34 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1300
+Apr. 12, 2023 6:16:21 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1407
+2023.04.12 18:16:28 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java
+2023.04.12 18:16:31 INFO  time: code lens generation in 2.43s
+2023.04.12 18:16:32 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/ServerLauncher.java
+2023.04.12 18:17:09 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java
+2023.04.12 18:20:24 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java
+2023.04.12 18:21:03 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java
+2023.04.12 18:21:04 WARN  Running javac-semanticdb failed for file:///Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java. Output:
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java:94: error: ';' expected
+        RegistrationForm registrationForm = new RegistrationForm(lastName, courseCode, email, matriculation, null)
+                                                                                                                  ^
+1 error
+2023.04.12 18:21:35 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/models/RegistrationForm.java
+2023.04.12 18:24:01 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java
+2023.04.12 18:24:04 INFO  time: code lens generation in 2.24s
+2023.04.12 18:26:53 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/server/models/Course.java
+Apr. 12, 2023 6:29:25 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2090
+2023.04.12 21:08:22 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/ClientSimple.java
+2023.04.12 21:08:25 INFO  time: code lens generation in 2.77s
+2023.04.12 21:08:25 INFO  time: code lens generation in 1.87s
+Apr. 12, 2023 9:12:50 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2443
+Apr. 12, 2023 9:15:11 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2608
+Apr. 12, 2023 9:16:39 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2751
+Apr. 12, 2023 9:17:22 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2873
+2023.04.12 21:18:24 WARN  Cannot tokenize Java file file:///Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/ClientSimple.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLspService.didChange(MetalsLspService.scala:1248)
+	at scala.meta.metals.lsp.DelegatingScalaService.didChange(DelegatingScalaService.scala:50)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(null)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+Apr. 12, 2023 9:18:24 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+java.util.concurrent.CompletionException: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.next$1(JavaFoldingRangeExtractor.scala:100)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.gather$1(JavaFoldingRangeExtractor.scala:145)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.extract(JavaFoldingRangeExtractor.scala:155)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:48)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:43)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1776)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.04.12 21:18:29 WARN  Cannot tokenize Java file file:///Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/ClientSimple.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLspService.didChange(MetalsLspService.scala:1248)
+	at scala.meta.metals.lsp.DelegatingScalaService.didChange(DelegatingScalaService.scala:50)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(null)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+Apr. 12, 2023 9:18:29 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+java.util.concurrent.CompletionException: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.next$1(JavaFoldingRangeExtractor.scala:100)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.gather$1(JavaFoldingRangeExtractor.scala:145)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.extract(JavaFoldingRangeExtractor.scala:155)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:48)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:43)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1776)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.04.12 21:22:02 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/ClientSimple.java
+2023.04.12 21:22:03 WARN  Running javac-semanticdb failed for file:///Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/ClientSimple.java. Output:
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/ClientSimple.java:53: error: ';' expected
+               }e e{
+                   ^
+1 error
+2023.04.12 21:22:06 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/ClientSimple.java
+2023.04.12 21:22:09 INFO  time: code lens generation in 2.68s
+Apr. 12, 2023 9:23:23 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3289
+Apr. 12, 2023 9:26:28 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3582
+2023.04.12 21:28:22 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/ClientLaucher.java
+2023.04.12 21:28:24 WARN  no build target for: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java
+2023.04.12 21:28:28 INFO  time: code lens generation in 3.27s
+2023.04.12 21:28:28 INFO  time: code lens generation in 5.41s
+2023.04.12 21:28:28 INFO  time: code lens generation in 3.71s
+2023.04.12 21:28:57 INFO  Shutting down server
+2023.04.12 21:28:57 INFO  shutting down Metals
+2023.04.12 21:28:57 INFO  Exiting server

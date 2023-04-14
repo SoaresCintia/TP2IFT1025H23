@@ -7,10 +7,12 @@ import server.models.RegistrationForm;
 import java.util.*;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.DataOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -142,7 +144,7 @@ public class Server {
 
         try {
             FileReader infoCours = new FileReader(
-                    "IFT1025-TP2-server-main/src/main/java/server/data/cours.txt");
+                    "src/main/java/server/data/cours.txt");
 
             BufferedReader reader = new BufferedReader(infoCours);
 
@@ -183,29 +185,32 @@ public class Server {
      * l'objet, l'écriture dans un fichier ou dans le flux de sortie.
      */
     public void handleRegistration() {
-        // TODO: implémenter cette méthode
 
         try {
-            FileInputStream fileIs = new FileInputStream("registrationForm.dat");
-            ObjectInputStream is = new ObjectInputStream(fileIs);
 
-            RegistrationForm registrationForm = (RegistrationForm) is.readObject();
+            String session = (String) objectInputStream.readObject();
+            RegistrationForm registrationForm = (RegistrationForm) objectInputStream.readObject();
 
-            FileOutputStream fileOutputStream = new FileOutputStream("inscription.txt");
+            FileWriter fw = new FileWriter("src/main/java/server/data/inscription.txt");
 
-            DataOutputStream output = new DataOutputStream(fileOutputStream);
+            BufferedWriter writer = new BufferedWriter(fw);
 
-            output.writeUTF(registrationForm.toString());
+            String s = "";
+            s = session + " " + registrationForm.getCourse().getCode() + " " + registrationForm.getMatricule() + " "
+                    + registrationForm.getPrenom()
+                    + " " + registrationForm.getNom() + " " + registrationForm.getEmail();
 
-            output.close();
+            // comment ecrire seulement a la fin
+            writer.append(s);
+            writer.close();
 
-            // FileOutputStream fileOs = new FileOutputStream("inscription.dat");
+            // FileOutputStream fileOutputStream = new FileOutputStream("inscription.txt");
+            // DataOutputStream output = new DataOutputStream(fileOutputStream);
 
-            // ObjectOutputStream os = new ObjectOutputStream(fileOs);
+            // System.out.println(registrationForm);
+            // output.writeUTF(registrationForm.toString());
 
-            // os.writeObject(registrationForm);
-
-            // os.close();
+            // output.close();
 
         } catch (ClassNotFoundException e) {
             System.out.println("La classe lu n'existe pas dans le programme");
