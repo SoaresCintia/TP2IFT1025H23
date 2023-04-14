@@ -52,6 +52,8 @@ public class ClientInterfaceSimple {
         System.out.println("1. Consulter les cours offerts pour une autre session");
         System.out.println("2. Inscription à un cours");
 
+        System.out.print("Choix: ");
+
         scanner = new Scanner(System.in);
         return scanner.nextInt();
 
@@ -61,19 +63,19 @@ public class ClientInterfaceSimple {
 
         scanner = new Scanner(System.in);
 
-        System.out.println("Veuillez saisir votre prénom: ");
+        System.out.print("Veuillez saisir votre prénom: ");
         String firstName = scanner.nextLine();
 
-        System.out.println("Veuillez saisir votre nom: ");
+        System.out.print("Veuillez saisir votre nom: ");
         String lastName = scanner.nextLine();
 
-        System.out.println("Veuillez saisir votre email: ");
+        System.out.print("Veuillez saisir votre email: ");
         String email = scanner.nextLine();
 
-        System.out.println("Veuillez saisir votre matricule: ");
+        System.out.print("Veuillez saisir votre matricule: ");
         String matriculation = scanner.nextLine();
 
-        System.out.println("Veuillez saisir le code du cours: ");
+        System.out.print("Veuillez saisir le code du cours: ");
         String courseCode = scanner.nextLine();
 
         RegistrationForm registrationForm = new RegistrationForm(lastName, lastName, email, matriculation, null);
@@ -89,4 +91,14 @@ public class ClientInterfaceSimple {
         }
         return registrationForm;
     }
+
+    public void displayLastMessage(Boolean success, String firstName, String courseCode) {
+        if (success) {
+            System.out.println("Félicitations! Inscription réussie de " + firstName + " au cours " + courseCode);
+        } else {
+            System.out.println("Échec dans l'inscription pourquoi ?");
+
+        }
+    }
+
 }
