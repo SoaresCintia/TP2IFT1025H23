@@ -92,13 +92,14 @@ public class ClientInterfaceSimple {
         return registrationForm;
     }
 
-    public void displayLastMessage(Boolean success, String firstName, String courseCode) {
-        if (success) {
-            System.out.println("Félicitations! Inscription réussie de " + firstName + " au cours " + courseCode);
-        } else {
-            System.out.println("Échec dans l'inscription pourquoi ?");
-
-        }
-    }
+    // public void displayLastMessage(Boolean success, String firstName, String
+    // courseCode) {
+    // if (success) {
+    // System.out.println("Félicitations! Inscription réussie de " + firstName + "
+    // au cours " + courseCode);
+    // } else {
+    // System.out.println("Échec dans l'inscription pourquoi ?");
+    // }
+    // }
 
 }

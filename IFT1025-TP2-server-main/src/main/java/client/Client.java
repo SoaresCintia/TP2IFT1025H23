@@ -1,17 +1,13 @@
 package client;
 
-import java.io.BufferedWriter;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 import server.models.Course;
 import server.models.RegistrationForm;
@@ -62,7 +58,8 @@ public class Client {
         }
     }
 
-    public void inscription(RegistrationForm registrationForm, String session) throws IOException {
+    public void inscription(RegistrationForm registrationForm, String session)
+            throws IOException, ClassNotFoundException {
 
         OutputStream outputStream = clientSocket.getOutputStream();
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
@@ -72,6 +69,12 @@ public class Client {
         objectOutputStream.writeObject(session);
 
         objectOutputStream.writeObject(registrationForm);
+
+        InputStream inputStream = clientSocket.getInputStream();
+        ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
+        String message = (String) objectInputStream.readObject();
+
+        System.out.println(message);
 
     }
 

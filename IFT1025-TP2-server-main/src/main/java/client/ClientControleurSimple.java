@@ -54,6 +54,7 @@ public class ClientControleurSimple {
             } else {
                 client.inscription(registrationForm, session);
                 // TODO ne pas oublier de faire les validations
+
             }
 
         } catch (Exception e) {

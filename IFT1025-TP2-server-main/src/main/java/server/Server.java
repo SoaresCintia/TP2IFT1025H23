@@ -152,14 +152,12 @@ public class Server {
 
             while ((line = reader.readLine()) != null) {
 
-                String[] parts = line.split(" ");
+                String[] parts = line.split("\t");
 
                 if (parts[2].equals(arg)) {
-
                     courses.add(new Course(parts[1], parts[0], parts[2]));
                 }
             }
-
             reader.close();
 
         } catch (IOException ex) {
@@ -186,36 +184,44 @@ public class Server {
      */
     public void handleRegistration() {
 
+        String message = "Le code du cours n'est pas valide ou ce cours n'est pas disponible pour la session choisie";
+
         try {
 
             String session = (String) objectInputStream.readObject();
             RegistrationForm registrationForm = (RegistrationForm) objectInputStream.readObject();
 
-            FileWriter fw = new FileWriter("src/main/java/server/data/inscription.txt");
+            FileWriter fw = new FileWriter("src/main/java/server/data/inscription.txt", true);
 
             BufferedWriter writer = new BufferedWriter(fw);
 
-            String s = "";
-            s = session + " " + registrationForm.getCourse().getCode() + " " + registrationForm.getMatricule() + " "
+            String s = "\n" + session + "\t" + registrationForm.getCourse().getCode() + "\t"
+                    + registrationForm.getMatricule() + "\t"
                     + registrationForm.getPrenom()
-                    + " " + registrationForm.getNom() + " " + registrationForm.getEmail();
+                    + "\t" + registrationForm.getNom() + "\t" + registrationForm.getEmail();
 
-            // comment ecrire seulement a la fin
             writer.append(s);
             writer.close();
-
-            // FileOutputStream fileOutputStream = new FileOutputStream("inscription.txt");
-            // DataOutputStream output = new DataOutputStream(fileOutputStream);
-
-            // System.out.println(registrationForm);
-            // output.writeUTF(registrationForm.toString());
-
-            // output.close();
+            message = "Félicitations! Inscription réussie de " + registrationForm.getPrenom() + " au cours "
+                    + registrationForm
+                            .getCourse().getCode();
 
         } catch (ClassNotFoundException e) {
             System.out.println("La classe lu n'existe pas dans le programme");
         } catch (IOException e) {
             System.out.println("Erreur à la lecture ou à ecriture du fichier");
+        } catch (NullPointerException e) {
+            System.out.println("Code du cours invalide.");
+
+        }
+
+        try {
+            objectOutputStream.writeObject(message);
+
+        } catch (IOException ex) {
+            System.out.println("Erreur dans l'envoie de la dernier message au client.");
+            // ex.printStackTrace();
+
         }
 
     }
