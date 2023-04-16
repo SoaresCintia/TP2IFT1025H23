@@ -23,11 +23,12 @@ public class ClientControleurSimple {
     ClientInterfaceSimple interfaceSimple = new ClientInterfaceSimple();
 
     public ClientControleurSimple() {
-        chooseCourse();
-        registrationForm = interfaceSimple.enterInformation(courses);
-        // System.out.println(registrationForm.getCourse().getCode());
-        sendRequest(REGISTER_COMMAND);
 
+        chooseCourse();
+
+        registrationForm = interfaceSimple.enterInformation(courses);
+
+        sendRequest(REGISTER_COMMAND);
     }
 
     private void chooseCourse() {
