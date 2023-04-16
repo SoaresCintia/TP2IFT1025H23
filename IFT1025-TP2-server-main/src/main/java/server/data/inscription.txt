@@ -1,1 +1,5 @@
 Automne	IFT2255	12345678	Michalis	Famelis	mfamelis@iro.umontreal.ca
+Automne	IFT1015	ccc	c	cccc	cc
+Hiver	IFT1025	345	cintia	soares	cin@so
+Automne	IFT1227	34	cd	rerw	sder
+Automne	IFT1227	fds	cd	fds	cd

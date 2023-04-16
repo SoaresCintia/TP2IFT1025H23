@@ -36,101 +36,108 @@ import javafx.scene.text.Text;
  */
 public class Vue extends Application {
 
-    // create a new terminal and do mvn javafx:run
+        // create a new terminal and do mvn javafx:run
 
-    private TableView<Course> table;
+        private static Controleur controleur;
 
-    @Override
-    public void start(Stage primaryStage) {
+        private TableView<Course> table;
 
-        Controleur controleur = new Controleur();
+        @Override
+        public void start(Stage primaryStage) {
 
-        ArrayList<Course> courses;
+                ArrayList<Course> courses;
 
-        String session = "Automne";
-        courses = controleur.chooseCourse();
-        System.out.println(courses.size());
+                String session = "Automne";
+                // courses = controleur.chooseCourse();
+                // System.out.println(courses.size());
 
-        BorderPane root = new BorderPane();
+                BorderPane root = new BorderPane();
 
-        // Create the left panel with the course list
-        VBox coursePane = new VBox();
+                // Create the left panel with the course list
+                VBox coursePane = new VBox();
 
-        // create the table columns
-        TableColumn<Course, String> codeColumn = new TableColumn<>("Code");
-        codeColumn.setCellValueFactory(new PropertyValueFactory<>("code"));
+                // create the table columns
+                TableColumn<Course, String> codeColumn = new TableColumn<>("Code");
+                codeColumn.setCellValueFactory(new PropertyValueFactory<>("code"));
 
-        TableColumn<Course, String> courseColumn = new TableColumn<>("Course");
-        courseColumn.setCellValueFactory(new PropertyValueFactory<>("course"));
+                TableColumn<Course, String> courseColumn = new TableColumn<>("Course");
+                courseColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
 
-        // create the table and add the columns
-        table = new TableView<>();
-        table.getColumns().addAll(codeColumn, courseColumn);
+                // create the table and add the columns
+                table = new TableView<>();
+                table.getColumns().addAll(codeColumn, courseColumn);
 
-        // add some sample data to the table
-        ObservableList<Course> coursesVue = FXCollections.observableArrayList(courses);
-        table.setItems(coursesVue);
+                // add some sample data to the table
+                ObservableList<Course> coursesVue = FXCollections.observableArrayList();
+                // = FXCollections.observableArrayList(courses);
+                table.setItems(coursesVue);
 
-        coursePane.getChildren().addAll(table);
+                String courseCode = "";
+                table.setOnMouseClicked(event -> controleur
+                                .setCourseCode(table.getSelectionModel().getSelectedItem().getCode()));
 
-        String[] sessions = { "Automne", "Hiver", "Éte" };
+                coursePane.getChildren().addAll(table);
 
-        ChoiceBox<String> optionSessions = new ChoiceBox<String>();
+                String[] sessions = { "Automne", "Hiver", "Ete" };
 
-        optionSessions.getItems().setAll(sessions);
+                ChoiceBox<String> optionSessions = new ChoiceBox<String>();
 
-        optionSessions.setOnAction(event -> controleur.setSession(optionSessions.getValue()));
+                optionSessions.getItems().setAll(sessions);
 
-        coursePane.getChildren().addAll(optionSessions);
+                optionSessions.setOnAction(event -> controleur.setSession(optionSessions.getValue()));
 
-        Button loadButton = new Button("Charger");
-        loadButton.setOnAction(event -> controleur.chooseCourse());
+                coursePane.getChildren().addAll(optionSessions);
 
-        // le controleur doit dire a la vue de charcher les cours
-        coursePane.getChildren().addAll(loadButton);
+                Button loadButton = new Button("Charger");
+                loadButton.setOnAction(event -> controleur.chooseCourse());
 
-        // Create the grid pane for the form layout
-        GridPane formPane = new GridPane();
-        // gridPane.setPadding(new Insets(10));
-        formPane.setHgap(6);
-        formPane.setVgap(6);
+                coursePane.getChildren().addAll(loadButton);
 
-        // Add the form fields
-        Label firstNameLabel = new Label("Prénom:");
-        TextField firstName = new TextField();
-        formPane.addRow(0, firstNameLabel, firstName);
+                // Create the grid pane for the form layout
+                GridPane formPane = new GridPane();
+                formPane.setHgap(6);
+                formPane.setVgap(6);
 
-        Label lastNameLabel = new Label("Nom:");
-        TextField lastName = new TextField();
-        formPane.addRow(0, lastNameLabel, lastName);
+                // Add the form fields
+                Label firstNameLabel = new Label("Prénom:");
+                TextField firstName = new TextField();
+                formPane.addRow(0, firstNameLabel, firstName);
 
-        Label emailLabel = new Label("Email:");
-        TextField email = new TextField();
-        formPane.addRow(1, emailLabel, email);
+                Label lastNameLabel = new Label("Nom:");
+                TextField lastName = new TextField();
+                formPane.addRow(0, lastNameLabel, lastName);
 
-        Label matriculeLabel = new Label("Matricule:");
-        TextField matricule = new TextField();
-        formPane.addRow(2, matriculeLabel, matricule);
+                Label emailLabel = new Label("Email:");
+                TextField email = new TextField();
+                formPane.addRow(1, emailLabel, email);
 
-        // Add the submit button
-        Button submitButton = new Button("envoyer");
+                Label matriculeLabel = new Label("Matricule:");
+                TextField matricule = new TextField();
+                formPane.addRow(2, matriculeLabel, matricule);
 
-        submitButton.setOnAction(e -> {
-            // Handle form submission here
-            // controleur.submit(firstName, lastName, email, matricule);
-        });
-        formPane.addRow(3, submitButton);
+                // Add the submit button
+                Button submitButton = new Button("envoyer");
 
-        root.setLeft(coursePane);
-        root.setRight(formPane);
+                submitButton.setOnAction(e -> {
+                        // Handle form submission here
+                        controleur.doInscription(firstName.getText(), lastName.getText(), email.getText(),
+                                        matricule.getText());
+                });
+                formPane.addRow(3, submitButton);
 
-        // Set up the scene and show the stage
-        primaryStage.setScene(new Scene(root, 800, 500));
-        primaryStage.setTitle("Course List App");
-        primaryStage.show();
+                root.setLeft(coursePane);
+                root.setRight(formPane);
 
-        // primaryStage.setTitle("Formulaire d'inscription");
+                //
+                controleur = new Controleur(coursesVue, courseCode);
 
-    }
+                // Set up the scene and show the stage
+                primaryStage.setScene(new Scene(root, 800, 500));
+                primaryStage.setTitle("Course List App");
+                primaryStage.show();
+
+                // primaryStage.setTitle("Formulaire d'inscription");
+
+        }
 
 }

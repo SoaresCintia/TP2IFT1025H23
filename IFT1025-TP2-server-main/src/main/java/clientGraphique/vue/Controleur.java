@@ -2,44 +2,72 @@ package clientGraphique.vue;
 
 import java.util.ArrayList;
 
-import javafx.scene.control.TextField;
+import javafx.collections.ObservableList;
+import javafx.scene.text.Text;
 import server.models.Course;
 import server.models.RegistrationForm;
 
 public class Controleur {
 
-    public Controleur(Model model, Vue vue) {
-    }
+    // public Controleur(Model model, Vue vue) {
+    // }
 
-    public void submit(TextField firstName, TextField lastName, TextField email, TextField matricule) {
+    // public void submit(TextField firstName, TextField lastName, TextField email,
+    // TextField matricule) {
 
-    }
+    // }
 
     public final static int PORT = 1337;
-
     public final static String REGISTER_COMMAND = "INSCRIRE";
     public final static String LOAD_COMMAND = "CHARGER";
 
     private ArrayList<Course> courses = new ArrayList<Course>();
-
+    private Course course = new Course(null, null, null);
+    private String courseCode;
+    private RegistrationForm registrationForm = new RegistrationForm(null, null, null, null, course);
     private String session;
 
     private Model model;
 
-    private RegistrationForm registrationForm;
+    private ObservableList<Course> coursesVue;
 
-    // Vue vue = new Vue();
+    Text text;
 
-    public Controleur() {
+    public Controleur(ObservableList<Course> coursesVue, String courseCode) {
         session = "Automne";
+        this.coursesVue = coursesVue;
+        this.courseCode = courseCode;
     }
 
-    public ArrayList<Course> chooseCourse() {
+    public void chooseCourse() {
 
-        // this.session = session;
         sendRequest(LOAD_COMMAND);
-        return courses;
+        this.updateCoursesVue();
+        coursesVue.setAll(courses);
 
+    }
+
+    private void updateCoursesVue() {
+        this.coursesVue.setAll(courses);
+    }
+
+    public void doInscription(String firstName, String lastName, String email, String matricule) {
+        this.findCourse();
+        registrationForm.setPrenom(firstName);
+        registrationForm.setNom(lastName);
+        registrationForm.setEmail(email);
+        registrationForm.setMatricule(matricule);
+        registrationForm.setCourse(course);
+        sendRequest(REGISTER_COMMAND);
+    }
+
+    private void findCourse() {
+        for (int i = 0; i < courses.size(); i++) {
+            course = courses.get(i);
+            if (courses.get(i).getCode() == courseCode) {
+                break;
+            }
+        }
     }
 
     private void sendRequest(String request) {
@@ -51,7 +79,6 @@ public class Controleur {
                 courses = model.charger(session, courses);
             } else {
                 model.inscription(registrationForm, session);
-
             }
 
         } catch (Exception e) {
@@ -62,7 +89,10 @@ public class Controleur {
 
     public void setSession(String session) {
         this.session = session;
-        System.out.println(session);
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
     }
 
 }
