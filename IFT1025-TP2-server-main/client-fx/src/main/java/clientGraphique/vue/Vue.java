@@ -1,12 +1,11 @@
 package clientGraphique.vue;
 
-import common.models.Course;
-
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.stage.Stage;
+import models.Course;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;

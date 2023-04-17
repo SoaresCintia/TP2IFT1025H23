@@ -1,0 +1,35 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] parent                                                             [pom]
+[INFO] common                                                             [jar]
+[INFO] client-fx                                                          [jar]
+[INFO] client-simple                                                      [jar]
+[INFO] server                                                             [jar]
+[INFO] 
+[INFO] -------------------< com.github.cintiasoares:parent >-------------------
+[INFO] Building parent 0.1.0-SNAPSHOT                                     [1/5]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for parent 0.1.0-SNAPSHOT:
+[INFO] 
+[INFO] parent ............................................. FAILURE [  0.001 s]
+[INFO] common ............................................. SKIPPED
+[INFO] client-fx .......................................... SKIPPED
+[INFO] client-simple ...................................... SKIPPED
+[INFO] server ............................................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.181 s
+[INFO] Finished at: 2023-04-17T00:31:19-04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Unknown lifecycle phase "server". You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: pre-clean, clean, post-clean, validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-site, site, post-site, site-deploy. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/LifecyclePhaseNotFoundException

@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import javafx.collections.ObservableList;
 import javafx.scene.control.Alert;
 import javafx.scene.text.Text;
-import common.models.Course;
-import common.models.RegistrationForm;
+import models.Course;
+import models.RegistrationForm;
 
 /**
  * Controleur du client graphique

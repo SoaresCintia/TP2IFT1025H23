@@ -1,8 +1,4 @@
-package server;
-
-/**
- * Cette interface fonctionnelle
- */
+package serverL;
 
 @FunctionalInterface
 public interface EventHandler {

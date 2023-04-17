@@ -1,4 +1,4 @@
-package server;
+package serverL;
 
 public class ServerLauncher {
     public final static int PORT = 1337;

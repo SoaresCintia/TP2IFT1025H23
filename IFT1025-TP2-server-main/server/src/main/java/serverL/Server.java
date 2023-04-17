@@ -1,4 +1,4 @@
-package server;
+package serverL;
 
 import javafx.util.Pair;
 import common.models.Course;

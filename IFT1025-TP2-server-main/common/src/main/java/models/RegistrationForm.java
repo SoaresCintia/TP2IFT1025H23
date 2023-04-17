@@ -1,4 +1,4 @@
-package common.models;
+package models;
 
 import java.io.Serializable;
 
@@ -59,6 +59,7 @@ public class RegistrationForm implements Serializable {
 
     @Override
     public String toString() {
-        return "InscriptionForm{" + "prenom='" + prenom + '\'' + ", nom='" + nom + '\'' + ", email='" + email + '\'' + ", matricule='" + matricule + '\'' + ", course='" + course + '\'' + '}';
+        return "InscriptionForm{" + "prenom='" + prenom + '\'' + ", nom='" + nom + '\'' + ", email='" + email + '\''
+                + ", matricule='" + matricule + '\'' + ", course='" + course + '\'' + '}';
     }
 }

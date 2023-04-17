@@ -9,8 +9,7 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 
-import common.models.Course;
-import common.models.RegistrationForm;
+import models.Course;
 
 /**
  * Model pour les client graphique

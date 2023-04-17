@@ -3,8 +3,8 @@ package client;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import common.models.Course;
-import common.models.RegistrationForm;
+import models.Course;
+import models.RegistrationForm;
 
 /**
  * classe pour l'interface simple sur la ligne de console
