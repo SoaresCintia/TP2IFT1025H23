@@ -13,20 +13,20 @@ import javafx.stage.Stage;
 import server.models.Course;
 import server.models.RegistrationForm;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.ScrollPane;
+
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
-import javafx.scene.text.Text;
 
 /*
  * Dans cette classe nous definissons les éléments graphiques de notre
@@ -128,8 +128,12 @@ public class Vue extends Application {
                 root.setLeft(coursePane);
                 root.setRight(formPane);
 
+                String selection = "ok";
+                Alert alert = new Alert(AlertType.CONFIRMATION, "Delete " + selection + " ?", ButtonType.YES,
+                                ButtonType.NO, ButtonType.CANCEL);
+                // alert.showAndWait();
                 //
-                controleur = new Controleur(coursesVue, courseCode);
+                controleur = new Controleur(coursesVue, alert);
 
                 // Set up the scene and show the stage
                 primaryStage.setScene(new Scene(root, 800, 500));
