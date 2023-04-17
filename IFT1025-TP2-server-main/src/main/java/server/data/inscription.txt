@@ -1,14 +1,2 @@
 Automne	IFT2255	12345678	Michalis	Famelis	mfamelis@iro.umontreal.ca
-Automne	IFT2255	333	23	333	33
-Automne	IFT2255	fdfs	fds	fds	fds
-Automne	IFT1227	dsa	ds	dsa	dsa
-Automne	IFT1227	dsa	ds	dsa	dsa
-Automne	IFT1227	fds	fd	fds	fd
-Automne	IFT2255	ds	ds	ds	ds
-Automne	IFT2255	sa	sa	SA	sa
-Automne	IFT1015	dsa	dsa	da	dsa
-Automne	IFT2255	dsa	dsadddd	da	dsa
-Automne	IFT2255	dsa	dsd	dsa	da
-Hiver	IFT2255	dsa	dsd	dsa	da
-Automne	IFT2255	fs	fds	fds	fsd
-Automne	IFT1227	sa	sAS	AS	saSA
+Automne	IFT1227	87	ci	so	ci
