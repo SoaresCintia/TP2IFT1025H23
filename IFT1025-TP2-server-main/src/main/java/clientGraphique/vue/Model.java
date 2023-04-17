@@ -36,8 +36,6 @@ public class Model {
             ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
             courses = (ArrayList<Course>) objectInputStream.readObject();
 
-            // System.out.println(courses.get(0).getCode());
-
         } catch (IOException e) {
             System.out.println("Erreur à l'ouverture du fichier ou objet");
         } catch (ClassNotFoundException ex) {
@@ -50,14 +48,6 @@ public class Model {
         return courses;
 
     }
-
-    // public void displayCourses(ArrayList<Course> courses) {
-    // for (int i = 0; i < courses.size(); i++) {
-    // int j = i + 1;
-    // System.out.println(j + ". " + courses.get(i).getName() + " " +
-    // courses.get(i).getCode());
-    // }
-    // }
 
     public void inscription(RegistrationForm registrationForm, String session)
             throws IOException, ClassNotFoundException {

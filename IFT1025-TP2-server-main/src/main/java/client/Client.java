@@ -36,8 +36,6 @@ public class Client {
             ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
             courses = (ArrayList<Course>) objectInputStream.readObject();
 
-            // System.out.println(courses.get(0).getCode());
-
         } catch (IOException e) {
             System.out.println("Erreur à l'ouverture du fichier ou objet");
         } catch (ClassNotFoundException ex) {

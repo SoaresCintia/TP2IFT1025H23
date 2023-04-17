@@ -22,9 +22,9 @@ public class Controleur {
     public final static String LOAD_COMMAND = "CHARGER";
 
     private ArrayList<Course> courses = new ArrayList<Course>();
-    private Course course = new Course(null, null, null);
+    private Course course; // = new Course(null, null, null);
     private String courseCode;
-    private RegistrationForm registrationForm = new RegistrationForm(null, null, null, null, course);
+    private RegistrationForm registrationForm; // = new RegistrationForm(null, null, null, null, course);
     private String session;
 
     private Model model;
@@ -33,10 +33,10 @@ public class Controleur {
 
     Text text;
 
-    public Controleur(ObservableList<Course> coursesVue, String courseCode) {
+    public Controleur(ObservableList<Course> coursesVue) {
         session = "Automne";
         this.coursesVue = coursesVue;
-        this.courseCode = courseCode;
+        // this.courseCode = courseCode;
     }
 
     public void chooseCourse() {
@@ -44,6 +44,8 @@ public class Controleur {
         sendRequest(LOAD_COMMAND);
         this.updateCoursesVue();
         coursesVue.setAll(courses);
+        this.courseCode = "";
+        // System.out.println(courseCode);
 
     }
 
@@ -52,22 +54,18 @@ public class Controleur {
     }
 
     public void doInscription(String firstName, String lastName, String email, String matricule) {
-        this.findCourse();
-        registrationForm.setPrenom(firstName);
-        registrationForm.setNom(lastName);
-        registrationForm.setEmail(email);
-        registrationForm.setMatricule(matricule);
-        registrationForm.setCourse(course);
-        sendRequest(REGISTER_COMMAND);
-    }
 
-    private void findCourse() {
+        registrationForm = new RegistrationForm(firstName, lastName, email, matricule, null);
+
         for (int i = 0; i < courses.size(); i++) {
-            course = courses.get(i);
-            if (courses.get(i).getCode() == courseCode) {
+
+            if (courses.get(i).getCode().equals(courseCode)) {
+                registrationForm.setCourse(courses.get(i));
                 break;
             }
         }
+
+        sendRequest(REGISTER_COMMAND);
     }
 
     private void sendRequest(String request) {

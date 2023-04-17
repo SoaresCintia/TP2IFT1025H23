@@ -78,7 +78,7 @@ public class ClientInterfaceSimple {
         System.out.print("Veuillez saisir le code du cours: ");
         String courseCode = scanner.nextLine();
 
-        RegistrationForm registrationForm = new RegistrationForm(lastName, lastName, email, matriculation, null);
+        RegistrationForm registrationForm = new RegistrationForm(firstName, lastName, email, matriculation, null);
 
         Course course;
         for (int i = 0; i < courses.size(); i++) {
