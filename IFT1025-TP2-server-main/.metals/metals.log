@@ -16746,3 +16746,612 @@ Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/s
 Note: Recompile with -Xlint:unchecked for details.
 1 warning.
 2023.04.16 21:20:06 INFO  time: compiled Server in 2.9s
+2023.04.16 21:21:55 INFO  compiling server (1 java source)
+2023.04.16 21:21:58 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:21:58 INFO  time: compiled Server in 2.75s
+Apr. 16, 2023 9:47:07 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13226
+Apr. 16, 2023 9:47:37 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13281
+Apr. 16, 2023 9:47:46 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13294
+2023.04.16 21:48:03 INFO  compiling server (1 java source)
+2023.04.16 21:48:03 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java
+2023.04.16 21:48:07 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:48:07 INFO  time: compiled Server in 4.07s
+Apr. 16, 2023 9:51:19 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13665
+2023.04.16 21:51:54 INFO  compiling server (1 java source)
+2023.04.16 21:51:58 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:51:58 INFO  time: compiled Server in 4.34s
+2023.04.16 21:52:14 INFO  compiling server (1 java source)
+2023.04.16 21:52:14 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+2023.04.16 21:52:16 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+2023.04.16 21:52:17 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:52:17 INFO  time: compiled Server in 2.53s
+2023.04.16 21:53:10 INFO  compiling server (1 java source)
+2023.04.16 21:53:12 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:53:12 INFO  time: compiled Server in 2.26s
+2023.04.16 21:54:27 INFO  compiling server (1 java source)
+2023.04.16 21:54:27 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+2023.04.16 21:54:29 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+Apr. 16, 2023 9:54:29 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/publishDiagnostics",
+  "params": {
+    "textDocument": {
+      "uri": "file:///Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/warning:%5Boptions%5D%20system%20modules%20path%20not%20set%20in%20conjunction%20with%20-source%2011%0A/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java"
+    },
+    "buildTarget": {
+      "uri": "file:/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/?id\u003dServer"
+    },
+    "diagnostics": [
+      {
+        "range": {
+          "start": {
+            "line": 42,
+            "character": 0
+          },
+          "end": {
+            "line": 42,
+            "character": 0
+          }
+        },
+        "severity": 1,
+        "source": "bloop",
+        "message": " error: bad operand type String for unary operator \u0027+\u0027"
+      }
+    ],
+    "reset": true
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/warning:[options] system modules path not set in conjunction with -source 11
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.toInput(CommonMtagsEnrichments.scala:568)
+	at scala.meta.internal.metals.Diagnostics.onPublishDiagnostics(Diagnostics.scala:166)
+	at scala.meta.internal.metals.Diagnostics.onBuildPublishDiagnostics(Diagnostics.scala:146)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.onBuildPublishDiagnostics(ForwardingMetalsBuildClient.scala:109)
+	... 15 more
+
+2023.04.16 21:54:29 WARN  javac exited with exit code 1
+2023.04.16 21:54:29 INFO  time: compiled Server in 2.11s
+2023.04.16 21:54:30 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+2023.04.16 21:54:30 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+2023.04.16 21:54:57 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+2023.04.16 21:55:10 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+2023.04.16 21:55:13 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+2023.04.16 21:55:13 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+2023.04.16 21:55:14 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+2023.04.16 21:55:16 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+2023.04.16 21:55:16 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+2023.04.16 21:55:18 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+2023.04.16 21:55:19 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+2023.04.16 21:55:20 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+2023.04.16 21:55:24 INFO  compiling server (1 java source)
+2023.04.16 21:55:24 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+2023.04.16 21:55:28 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:55:28 INFO  time: compiled Server in 4.54s
+2023.04.16 21:55:28 INFO  compiling server (1 java source)
+2023.04.16 21:55:30 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 21:55:30 INFO  time: compiled Server in 1.6s
+2023.04.16 21:55:30 INFO  compiling server (1 java source)
+2023.04.16 21:55:34 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:55:34 INFO  time: compiled Server in 4.17s
+Apr. 16, 2023 9:56:30 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14134
+2023.04.16 21:56:44 INFO  compiling server (1 java source)
+2023.04.16 21:56:47 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:56:47 INFO  time: compiled Server in 2.65s
+2023.04.16 21:56:51 INFO  compiling server (1 java source)
+2023.04.16 21:56:53 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:56:53 INFO  time: compiled Server in 2.19s
+Apr. 16, 2023 9:57:39 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14314
+2023.04.16 21:58:17 INFO  compiling server (1 java source)
+2023.04.16 21:58:17 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java
+2023.04.16 21:58:19 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:58:19 INFO  time: compiled Server in 2.23s
+2023.04.16 21:58:35 INFO  compiling server (1 java source)
+2023.04.16 21:58:37 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:58:37 INFO  time: compiled Server in 2.29s
+2023.04.16 21:58:37 INFO  compiling server (1 java source)
+2023.04.16 21:58:39 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 21:58:39 INFO  time: compiled Server in 1.5s
+2023.04.16 22:00:04 INFO  compiling server (1 java source)
+2023.04.16 22:00:06 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 22:00:06 INFO  time: compiled Server in 2.58s
+2023.04.16 22:00:56 INFO  compiling server (1 java source)
+2023.04.16 22:00:59 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 22:00:59 INFO  time: compiled Server in 3.08s
+Apr. 16, 2023 10:01:23 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14799
+Apr. 16, 2023 10:01:24 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14803
+Apr. 16, 2023 10:01:32 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14821
+Apr. 16, 2023 10:01:59 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14905
+2023.04.16 22:02:03 INFO  compiling server (1 java source)
+2023.04.16 22:02:03 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java
+2023.04.16 22:02:06 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/Client.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 22:02:06 INFO  time: compiled Server in 3.45s
+2023.04.16 22:03:22 INFO  compiling server (1 java source)
+2023.04.16 22:03:24 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 22:03:24 INFO  time: compiled Server in 2.05s
+Apr. 16, 2023 10:04:02 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15162
+Apr. 16, 2023 10:04:03 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15168
+2023.04.16 22:04:08 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/ClientControleurSimple.java
+2023.04.16 22:04:08 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/ClientControleurSimple.java
+2023.04.16 22:04:08 INFO  compiling server (1 java source)
+2023.04.16 22:04:11 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 22:04:11 INFO  time: compiled Server in 2.96s
+2023.04.16 22:04:11 INFO  compiling server (1 java source)
+2023.04.16 22:04:13 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 22:04:13 INFO  time: compiled Server in 2.01s
+Apr. 16, 2023 10:04:24 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15209
+Apr. 16, 2023 10:04:34 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15241
+Apr. 16, 2023 10:07:07 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15510
+2023.04.16 22:07:13 INFO  compiling server (1 java source)
+2023.04.16 22:07:13 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/ClientInterfaceSimple.java
+2023.04.16 22:07:14 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/ClientInterfaceSimple.java
+2023.04.16 22:07:15 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 22:07:15 INFO  time: compiled Server in 2.65s
+2023.04.16 22:07:43 INFO  compiling server (1 java source)
+2023.04.16 22:07:46 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 22:07:46 INFO  time: compiled Server in 2.74s
+Apr. 16, 2023 10:08:31 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15726
+2023.04.16 22:09:03 INFO  compiling server (1 java source)
+2023.04.16 22:09:06 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 22:09:06 INFO  time: compiled Server in 2.22s
+Apr. 16, 2023 10:09:40 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15901
+Apr. 16, 2023 10:09:54 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15957
+Apr. 16, 2023 10:10:04 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16012
+2023.04.16 22:10:06 INFO  compiling server (1 java source)
+2023.04.16 22:10:06 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/client/ClientInterfaceSimple.java
+2023.04.16 22:10:08 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 22:10:08 INFO  time: compiled Server in 2.13s
+2023.04.16 22:10:40 INFO  compiling server (1 java source)
+2023.04.16 22:10:42 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 22:10:42 INFO  time: compiled Server in 2.17s
+2023.04.16 22:13:14 INFO  compiling server (1 java source)
+2023.04.16 22:13:19 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 22:13:19 INFO  time: compiled Server in 4.69s
+2023.04.16 22:13:19 INFO  compiling server (1 java source)
+2023.04.16 22:13:23 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 22:13:23 INFO  time: compiled Server in 3.96s
+Apr. 16, 2023 10:17:31 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16262
+2023.04.16 22:17:36 INFO  compiling server (1 java source)
+2023.04.16 22:17:38 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 22:17:38 INFO  time: compiled Server in 2.24s
+Apr. 16, 2023 10:17:54 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16301
+2023.04.16 22:19:34 INFO  compiling server (1 java source)
+2023.04.16 22:19:38 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 22:19:38 INFO  time: compiled Server in 4.02s
+2023.04.16 22:20:11 INFO  compiling server (1 java source)
+2023.04.16 22:20:15 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 22:20:15 INFO  time: compiled Server in 3.65s
+2023.04.16 22:20:34 INFO  compiling server (1 java source)
+2023.04.16 22:20:38 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 22:20:38 INFO  time: compiled Server in 4.12s
+Apr. 16, 2023 10:21:34 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16462
+2023.04.16 22:21:43 INFO  compiling server (1 java source)
+2023.04.16 22:21:45 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 22:21:45 INFO  time: compiled Server in 2.33s
+Apr. 16, 2023 10:21:57 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16527
+Apr. 16, 2023 10:22:55 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16651
+Apr. 16, 2023 10:23:37 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16696
+2023.04.16 22:23:50 INFO  compiling server (1 java source)
+2023.04.16 22:23:52 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 22:23:52 INFO  time: compiled Server in 2.79s
+Apr. 16, 2023 10:24:10 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16767
+Apr. 16, 2023 10:24:12 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16774
+2023.04.16 22:24:27 INFO  compiling server (1 java source)
+2023.04.16 22:24:28 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java
+2023.04.16 22:24:32 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Model.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 22:24:32 INFO  time: compiled Server in 4.34s
+2023.04.16 22:25:12 INFO  compiling server (1 java source)
+2023.04.16 22:25:15 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 22:25:15 INFO  time: compiled Server in 2.9s
+2023.04.16 22:25:57 INFO  compiling server (1 java source)
+2023.04.16 22:26:00 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 22:26:00 INFO  time: compiled Server in 2.27s
+2023.04.16 22:26:06 INFO  compiling server (1 java source)
+2023.04.16 22:26:06 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Controleur.java
+2023.04.16 22:26:07 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Controleur.java
+2023.04.16 22:26:08 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Controleur.java
+2023.04.16 22:26:09 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 22:26:09 INFO  time: compiled Server in 2.81s
+Apr. 16, 2023 10:26:37 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 17103
+2023.04.16 22:26:43 INFO  compiling server (1 java source)
+2023.04.16 22:26:45 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 22:26:45 INFO  time: compiled Server in 2.17s
+2023.04.16 22:27:33 INFO  compiling server (1 java source)
+2023.04.16 22:27:35 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 22:27:35 INFO  time: compiled Server in 1.56s
+Apr. 16, 2023 10:27:50 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 17237
+2023.04.16 22:28:48 INFO  compiling server (1 java source)
+2023.04.16 22:28:50 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 22:28:50 INFO  time: compiled Server in 2.43s
+Apr. 16, 2023 10:30:01 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 17526
+2023.04.16 22:30:23 INFO  compiling server (1 java source)
+2023.04.16 22:30:28 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+1 warning.
+2023.04.16 22:30:28 INFO  time: compiled Server in 4.22s
+2023.04.16 22:33:25 INFO  compiling server (1 java source)
+Apr. 16, 2023 10:33:29 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/publishDiagnostics",
+  "params": {
+    "textDocument": {
+      "uri": "file:///Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/warning:%5Boptions%5D%20system%20modules%20path%20not%20set%20in%20conjunction%20with%20-source%2011%0A/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java"
+    },
+    "buildTarget": {
+      "uri": "file:/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/?id\u003dServer"
+    },
+    "diagnostics": [
+      {
+        "range": {
+          "start": {
+            "line": 78,
+            "character": 0
+          },
+          "end": {
+            "line": 78,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "bloop",
+        "message": " non-varargs call of varargs method with inexact argument type for last parameter;"
+      }
+    ],
+    "reset": true
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/warning:[options] system modules path not set in conjunction with -source 11
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.toInput(CommonMtagsEnrichments.scala:568)
+	at scala.meta.internal.metals.Diagnostics.onPublishDiagnostics(Diagnostics.scala:166)
+	at scala.meta.internal.metals.Diagnostics.onBuildPublishDiagnostics(Diagnostics.scala:146)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.onBuildPublishDiagnostics(ForwardingMetalsBuildClient.scala:109)
+	... 15 more
+
+2023.04.16 22:33:29 INFO  time: compiled Server in 4.57s
+2023.04.16 22:33:50 INFO  compiling server (1 java source)
+2023.04.16 22:33:51 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java
+Apr. 16, 2023 10:33:53 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/publishDiagnostics",
+  "params": {
+    "textDocument": {
+      "uri": "file:///Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/warning:%5Boptions%5D%20system%20modules%20path%20not%20set%20in%20conjunction%20with%20-source%2011%0A/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java"
+    },
+    "buildTarget": {
+      "uri": "file:/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/?id\u003dServer"
+    },
+    "diagnostics": [
+      {
+        "range": {
+          "start": {
+            "line": 78,
+            "character": 0
+          },
+          "end": {
+            "line": 78,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "bloop",
+        "message": " non-varargs call of varargs method with inexact argument type for last parameter;"
+      }
+    ],
+    "reset": true
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/warning:[options] system modules path not set in conjunction with -source 11
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.toInput(CommonMtagsEnrichments.scala:568)
+	at scala.meta.internal.metals.Diagnostics.onPublishDiagnostics(Diagnostics.scala:166)
+	at scala.meta.internal.metals.Diagnostics.onBuildPublishDiagnostics(Diagnostics.scala:146)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.onBuildPublishDiagnostics(ForwardingMetalsBuildClient.scala:109)
+	... 15 more
+
+2023.04.16 22:33:53 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java
+2023.04.16 22:33:53 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java
+2023.04.16 22:33:53 INFO  time: compiled Server in 3.4s
+2023.04.16 22:33:53 INFO  compiling server (1 java source)
+Apr. 16, 2023 10:33:57 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/publishDiagnostics",
+  "params": {
+    "textDocument": {
+      "uri": "file:///Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/warning:%5Boptions%5D%20system%20modules%20path%20not%20set%20in%20conjunction%20with%20-source%2011%0A/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java"
+    },
+    "buildTarget": {
+      "uri": "file:/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/?id\u003dServer"
+    },
+    "diagnostics": [
+      {
+        "range": {
+          "start": {
+            "line": 78,
+            "character": 0
+          },
+          "end": {
+            "line": 78,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "bloop",
+        "message": " non-varargs call of varargs method with inexact argument type for last parameter;"
+      }
+    ],
+    "reset": true
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/warning:[options] system modules path not set in conjunction with -source 11
+/Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.toInput(CommonMtagsEnrichments.scala:568)
+	at scala.meta.internal.metals.Diagnostics.onPublishDiagnostics(Diagnostics.scala:166)
+	at scala.meta.internal.metals.Diagnostics.onBuildPublishDiagnostics(Diagnostics.scala:146)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.onBuildPublishDiagnostics(ForwardingMetalsBuildClient.scala:109)
+	... 15 more
+
+2023.04.16 22:33:57 INFO  time: compiled Server in 3.84s
+2023.04.16 22:34:41 INFO  compiling server (1 java source)
+2023.04.16 22:34:45 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 22:34:45 INFO  time: compiled Server in 4.45s
+Apr. 16, 2023 10:37:16 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18234
+2023.04.16 22:37:17 INFO  compiling server (1 java source)
+2023.04.16 22:37:20 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 22:37:20 INFO  time: compiled Server in 2.72s
+Apr. 16, 2023 10:38:09 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18275
+Apr. 16, 2023 10:38:51 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18388
+2023.04.16 22:39:03 INFO  compiling server (1 java source)
+2023.04.16 22:39:07 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 22:39:07 INFO  time: compiled Server in 3.21s
+2023.04.16 22:40:18 INFO  compiling server (1 java source)
+2023.04.16 22:40:22 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 22:40:22 INFO  time: compiled Server in 4.33s
+Apr. 16, 2023 10:41:46 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18690
+2023.04.16 22:41:54 INFO  compiling server (1 java source)
+2023.04.16 22:41:58 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 22:41:58 INFO  time: compiled Server in 4.26s

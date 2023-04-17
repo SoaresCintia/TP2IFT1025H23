@@ -5,12 +5,16 @@ import java.util.ArrayList;
 import server.models.Course;
 import server.models.RegistrationForm;
 
+/**
+ * classe qui fait le lien entre la classe Client et la classe
+ * ClientInterfaceSimple
+ */
 public class ClientControleurSimple {
 
-    public final static int PORT = 1337;
+    private final static int PORT = 1337;
 
-    public final static String REGISTER_COMMAND = "INSCRIRE";
-    public final static String LOAD_COMMAND = "CHARGER";
+    private final static String REGISTER_COMMAND = "INSCRIRE";
+    private final static String LOAD_COMMAND = "CHARGER";
 
     private ArrayList<Course> courses = new ArrayList<Course>();
 
@@ -22,6 +26,9 @@ public class ClientControleurSimple {
 
     ClientInterfaceSimple interfaceSimple = new ClientInterfaceSimple();
 
+    /**
+     * Constructeur
+     */
     public ClientControleurSimple() {
 
         chooseCourse();

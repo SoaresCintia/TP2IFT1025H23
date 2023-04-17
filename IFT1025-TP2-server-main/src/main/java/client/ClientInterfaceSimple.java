@@ -6,6 +6,9 @@ import java.util.Scanner;
 import server.models.Course;
 import server.models.RegistrationForm;
 
+/**
+ * classe pour l'interface simple sur la ligne de console
+ */
 public class ClientInterfaceSimple {
 
     private Scanner scanner = new Scanner(System.in);
@@ -17,6 +20,11 @@ public class ClientInterfaceSimple {
 
     }
 
+    /**
+     * Imprime les sessions pour que l'utilisateur puisse choisir
+     * 
+     * @return la session choisie
+     */
     public String initialisation() {
 
         displaySessions();
@@ -49,6 +57,12 @@ public class ClientInterfaceSimple {
 
     }
 
+    /**
+     * Sert a que l'utilisateur puisse faire l'action de choisir de s'inscrire ou de
+     * consulter la liste des cours pour une autre session
+     * 
+     * @return le choix que l'utilisateur fait
+     */
     public Integer chooseCoursesInscription() {
         System.out.println("Choix:");
 
@@ -61,6 +75,13 @@ public class ClientInterfaceSimple {
         return scanner.nextInt();
 
     }
+
+    /**
+     * Prends les informations de l'utilisateur necessaires pour l'inscription
+     * 
+     * @param courses prends la liste des cours de la session choisie
+     * @return un formulaire qui contient les informations
+     */
 
     public RegistrationForm enterInformation(ArrayList<Course> courses) {
 
@@ -95,6 +116,14 @@ public class ClientInterfaceSimple {
         return registrationForm;
     }
 
+    /**
+     * Imprime le message a l'utilisateur si l'inscription est reussite ou pas
+     * 
+     * @param succes           true si l'inscription a ete effectue avec succes,
+     *                         false sinon
+     * @param registrationForm les informations du cours que l'etudiant veut
+     *                         s'inscrire
+     */
     public void displayLastMessage(Boolean succes, RegistrationForm registrationForm) {
         if (succes) {
             System.out.println("Félicitations! Inscription réussie de " + registrationForm.getPrenom() +

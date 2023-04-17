@@ -12,16 +12,34 @@ import java.util.ArrayList;
 import server.models.Course;
 import server.models.RegistrationForm;
 
+/**
+ * Model pour les client graphique
+ */
 public class Model {
 
-    public final static String REGISTER_COMMAND = "INSCRIRE";
-    public final static String LOAD_COMMAND = "CHARGER";
+    private final static String REGISTER_COMMAND = "INSCRIRE";
+    private final static String LOAD_COMMAND = "CHARGER";
     private final Socket clientSocket;
 
+    /**
+     * Constructeur
+     * 
+     * @param port numero de port pour la connextion avec le serveur
+     * @throws UnknownHostException
+     * @throws IOException
+     */
     public Model(int port) throws UnknownHostException, IOException {
         clientSocket = new Socket("127.0.0.1", port);
     }
 
+    /**
+     * Demande au serveur la liste des cours pour une session choisie
+     * 
+     * @param session session que l'etudiant souhaite s'inscrire
+     * @param courses liste de cours de la session choisie
+     * @return la liste de cours
+     * @throws IOException
+     */
     public ArrayList<Course> charger(String session, ArrayList<Course> courses) throws IOException {
 
         OutputStream outputStream = clientSocket.getOutputStream();
@@ -49,10 +67,21 @@ public class Model {
 
     }
 
+    /**
+     * Demande au serveur d'inscrire un etudiant dans un cours
+     * 
+     * @param registrationForm formulaire qui contient les information pour
+     *                         l'iscription
+     * @param session          session que l'etudiant souhaite s'inscrire
+     * @return true si l'inscription est reussite, false sinon
+     * @throws IOException
+     * @throws ClassNotFoundException
+     */
     public Boolean inscription(RegistrationForm registrationForm, String session)
             throws IOException, ClassNotFoundException {
 
         OutputStream outputStream = clientSocket.getOutputStream();
+
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
 
         objectOutputStream.writeObject(REGISTER_COMMAND);
@@ -62,12 +91,11 @@ public class Model {
         objectOutputStream.writeObject(registrationForm);
 
         InputStream inputStream = clientSocket.getInputStream();
+
         ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
-        // String message = (String) objectInputStream.readObject();
+
         Boolean succes = (Boolean) objectInputStream.readObject();
 
-        // System.out.println(message);
-        // return message;
         return succes;
 
     }

@@ -8,24 +8,18 @@ import javafx.scene.text.Text;
 import server.models.Course;
 import server.models.RegistrationForm;
 
+/**
+ * Controleur du client graphique
+ */
 public class Controleur {
 
-    // public Controleur(Model model, Vue vue) {
-    // }
-
-    // public void submit(TextField firstName, TextField lastName, TextField email,
-    // TextField matricule) {
-
-    // }
-
-    public final static int PORT = 1337;
-    public final static String REGISTER_COMMAND = "INSCRIRE";
-    public final static String LOAD_COMMAND = "CHARGER";
+    private final static int PORT = 1337;
+    private final static String REGISTER_COMMAND = "INSCRIRE";
+    private final static String LOAD_COMMAND = "CHARGER";
 
     private ArrayList<Course> courses = new ArrayList<Course>();
-    private Course course; // = new Course(null, null, null);
     private String courseCode;
-    private RegistrationForm registrationForm; // = new RegistrationForm(null, null, null, null, course);
+    private RegistrationForm registrationForm;
     private String session;
 
     private Alert alert;
@@ -36,19 +30,27 @@ public class Controleur {
 
     Text text;
 
+    /**
+     * Constructeur
+     * 
+     * @param coursesVue liste des cours de l'interface graphique
+     * @param alert      message de reussite d'inscription ou non
+     */
     public Controleur(ObservableList<Course> coursesVue, Alert alert) {
         session = "Automne";
         this.coursesVue = coursesVue;
         this.alert = alert;
     }
 
+    /**
+     * Methode qui demande au client la liste de cours pour une session choisie
+     */
     public void chooseCourse() {
 
         sendRequest(LOAD_COMMAND);
         this.updateCoursesVue();
         coursesVue.setAll(courses);
         this.courseCode = "";
-        // System.out.println(courseCode);
 
     }
 
@@ -56,6 +58,14 @@ public class Controleur {
         this.coursesVue.setAll(courses);
     }
 
+    /**
+     * Methode qui demande que serveur de faire l'inscription
+     * 
+     * @param firstName premier nom de l'etudiant
+     * @param lastName  nom de l'etudiant
+     * @param email     email de l'etudiant
+     * @param matricule matricule de l'etudiant
+     */
     public void doInscription(String firstName, String lastName, String email, String matricule) {
 
         registrationForm = new RegistrationForm(firstName, lastName, email, matricule, null);
@@ -96,10 +106,20 @@ public class Controleur {
         }
     }
 
+    /**
+     * actualise la session choisie par l'etudiant
+     * 
+     * @param session
+     */
     public void setSession(String session) {
         this.session = session;
     }
 
+    /**
+     * actualise le cours choisi par l'etudiant
+     * 
+     * @param courseCode
+     */
     public void setCourseCode(String courseCode) {
         this.courseCode = courseCode;
     }

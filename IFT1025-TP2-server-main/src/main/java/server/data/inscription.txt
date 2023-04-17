@@ -11,3 +11,4 @@ Automne	IFT2255	dsa	dsadddd	da	dsa
 Automne	IFT2255	dsa	dsd	dsa	da
 Hiver	IFT2255	dsa	dsd	dsa	da
 Automne	IFT2255	fs	fds	fds	fsd
+Automne	IFT1227	sa	sAS	AS	saSA

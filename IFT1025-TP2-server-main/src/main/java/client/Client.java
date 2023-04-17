@@ -12,16 +12,27 @@ import java.util.ArrayList;
 import server.models.Course;
 import server.models.RegistrationForm;
 
+/**
+ * Classe qui represente la partie model du client simple
+ */
 public class Client {
 
-    public final static String REGISTER_COMMAND = "INSCRIRE";
-    public final static String LOAD_COMMAND = "CHARGER";
+    private final static String REGISTER_COMMAND = "INSCRIRE";
+    private final static String LOAD_COMMAND = "CHARGER";
     private final Socket clientSocket;
 
     public Client(int port) throws UnknownHostException, IOException {
         clientSocket = new Socket("127.0.0.1", port);
     }
 
+    /**
+     * Methode qui demande au serveur d'envoier la liste de cours.
+     * 
+     * @param session session pour laquelle on souhaite obtenir la liste de cours
+     * @param courses la liste de cours
+     * @return une liste de cours
+     * @throws IOException
+     */
     public ArrayList<Course> charger(String session, ArrayList<Course> courses) throws IOException {
 
         OutputStream outputStream = clientSocket.getOutputStream();
@@ -49,6 +60,11 @@ public class Client {
 
     }
 
+    /**
+     * Imprime la liste des cours
+     * 
+     * @param courses liste des cours a etre imprimee
+     */
     public void displayCourses(ArrayList<Course> courses) {
         for (int i = 0; i < courses.size(); i++) {
             int j = i + 1;
@@ -56,6 +72,15 @@ public class Client {
         }
     }
 
+    /**
+     * Methode qui demande au serveur de faire l'inscription
+     * 
+     * @param registrationForm informations necessaires pour l'inscription
+     * @param session          session de l'inscription
+     * @return
+     * @throws IOException
+     * @throws ClassNotFoundException
+     */
     public Boolean inscription(RegistrationForm registrationForm, String session)
             throws IOException, ClassNotFoundException {
 

@@ -1,18 +1,11 @@
 package clientGraphique.vue;
 
-import java.security.Policy;
-import java.util.ArrayList;
-
-import javax.swing.text.StyledEditorKit.ForegroundAction;
-
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.Event;
-import javafx.geometry.Pos;
+import javafx.geometry.Insets;
 import javafx.stage.Stage;
 import server.models.Course;
-import server.models.RegistrationForm;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -27,6 +20,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
@@ -36,15 +30,17 @@ import javafx.scene.text.Text;
  * application.
  * 
  * Elle sert également comme le point d'entrée de l'application.
+ * >> mvn javafx:run
  */
 public class Vue extends Application {
-
-        // create a new terminal and do mvn javafx:run
 
         private static Controleur controleur;
 
         private TableView<Course> table;
 
+        /**
+         * methode qui initialise l'application
+         */
         @Override
         public void start(Stage primaryStage) {
 
@@ -72,7 +68,7 @@ public class Vue extends Application {
 
                 // add some sample data to the table
                 ObservableList<Course> coursesVue = FXCollections.observableArrayList();
-                // = FXCollections.observableArrayList(courses);
+
                 table.setItems(coursesVue);
 
                 table.setOnMouseClicked(event -> controleur
@@ -80,22 +76,29 @@ public class Vue extends Application {
 
                 coursePane.getChildren().addAll(label, table);
 
+                HBox hBoxSessions = new HBox();
+                // liste de sessions
                 String[] sessions = { "Automne", "Hiver", "Ete" };
-
                 ChoiceBox<String> optionSessions = new ChoiceBox<String>();
+                optionSessions.setPadding(new Insets(10));
 
                 optionSessions.getItems().setAll(sessions);
-
                 optionSessions.setOnAction(event -> controleur.setSession(optionSessions.getValue()));
+                hBoxSessions.getChildren().addAll(optionSessions);
 
-                coursePane.getChildren().addAll(optionSessions);
-
+                // Bouton qui envoie la session choisie
                 Button loadButton = new Button("Charger");
+                loadButton.setPadding(new Insets(10));
+
                 loadButton.setOnAction(event -> controleur.chooseCourse());
+                hBoxSessions.getChildren().addAll(loadButton);
 
-                coursePane.getChildren().addAll(loadButton);
+                hBoxSessions.setPadding(new Insets(10));
+                coursePane.getChildren().addAll(hBoxSessions);
 
-                // Create the grid pane for the form layout
+                coursePane.setPadding(new Insets(10));
+
+                // Cree le formulaire d'inscription a droite
                 GridPane formPane = new GridPane();
                 formPane.setHgap(6);
                 formPane.setVgap(6);
@@ -125,7 +128,6 @@ public class Vue extends Application {
                 Button submitButton = new Button("envoyer");
 
                 submitButton.setOnAction(e -> {
-                        // Handle form submission here
                         controleur.doInscription(firstName.getText(), lastName.getText(), email.getText(),
                                         matricule.getText());
                 });
@@ -139,11 +141,9 @@ public class Vue extends Application {
                 controleur = new Controleur(coursesVue, alert);
 
                 // Set up the scene and show the stage
-                primaryStage.setScene(new Scene(root, 800, 500));
+                primaryStage.setScene(new Scene(root, 800, 400));
                 primaryStage.setTitle("Inscription UdeM");
                 primaryStage.show();
-
-                // primaryStage.setTitle("Formulaire d'inscription");
 
         }
 
