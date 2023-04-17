@@ -239,8 +239,10 @@ public class Server {
      */
     public void handleRegistration() {
 
-        String message = "Le code du cours n'est pas valide ou ce cours n'est pas disponible pour la session choisie";
+        // String message = "Le code du cours n'est pas valide ou ce cours n'est pas
+        // disponible pour la session choisie";
 
+        Boolean succes = false;
         try {
 
             String session = (String) objectInputStream.readObject();
@@ -259,8 +261,10 @@ public class Server {
 
             writer.append(s);
             writer.close();
-            message = "Félicitations! Inscription réussie de " + registrationForm.getPrenom() + " au cours "
-                    + registrationForm.getCourse().getCode();
+            // message = "Félicitations! Inscription réussie de " +
+            // registrationForm.getPrenom() + " au cours "
+            // + registrationForm.getCourse().getCode();
+            succes = true;
 
         } catch (ClassNotFoundException e) {
             System.out.println("La classe lu n'existe pas dans le programme");
@@ -271,7 +275,8 @@ public class Server {
         }
 
         try {
-            objectOutputStream.writeObject(message);
+            // objectOutputStream.writeObject(message);
+            objectOutputStream.writeObject(succes);
         } catch (IOException ex) {
             System.out.println("Erreur dans l'envoie de la dernier message au client.");
         }

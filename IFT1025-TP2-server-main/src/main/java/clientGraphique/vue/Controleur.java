@@ -3,6 +3,7 @@ package clientGraphique.vue;
 import java.util.ArrayList;
 
 import javafx.collections.ObservableList;
+import javafx.scene.control.Alert;
 import javafx.scene.text.Text;
 import server.models.Course;
 import server.models.RegistrationForm;
@@ -27,16 +28,18 @@ public class Controleur {
     private RegistrationForm registrationForm; // = new RegistrationForm(null, null, null, null, course);
     private String session;
 
+    private Alert alert;
+
     private Model model;
 
     private ObservableList<Course> coursesVue;
 
     Text text;
 
-    public Controleur(ObservableList<Course> coursesVue) {
+    public Controleur(ObservableList<Course> coursesVue, Alert alert) {
         session = "Automne";
         this.coursesVue = coursesVue;
-        // this.courseCode = courseCode;
+        this.alert = alert;
     }
 
     public void chooseCourse() {
@@ -64,7 +67,6 @@ public class Controleur {
                 break;
             }
         }
-
         sendRequest(REGISTER_COMMAND);
     }
 
@@ -76,7 +78,16 @@ public class Controleur {
             if (request.equals(LOAD_COMMAND)) {
                 courses = model.charger(session, courses);
             } else {
-                model.inscription(registrationForm, session);
+                Boolean succes;
+                succes = model.inscription(registrationForm, session);
+                if (succes) {
+                    alert.setContentText("Félicitations! Inscription réussie de " + registrationForm.getPrenom() +
+                            "au cours " + registrationForm.getCourse().getCode());
+                } else {
+                    alert.setContentText("Vous devez choisir un cours.");
+
+                }
+                alert.showAndWait();
             }
 
         } catch (Exception e) {

@@ -53,8 +53,10 @@ public class ClientControleurSimple {
             if (request.equals(LOAD_COMMAND)) {
                 courses = client.charger(session, courses);
             } else {
-                client.inscription(registrationForm, session);
-                // TODO ne pas oublier de faire les validations
+                Boolean succes;
+                succes = client.inscription(registrationForm, session);
+
+                interfaceSimple.displayLastMessage(succes, registrationForm);
 
             }
 

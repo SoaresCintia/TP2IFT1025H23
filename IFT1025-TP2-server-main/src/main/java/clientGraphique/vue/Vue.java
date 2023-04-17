@@ -48,8 +48,6 @@ public class Vue extends Application {
                 ArrayList<Course> courses;
 
                 String session = "Automne";
-                // courses = controleur.chooseCourse();
-                // System.out.println(courses.size());
 
                 BorderPane root = new BorderPane();
 
@@ -60,7 +58,7 @@ public class Vue extends Application {
                 TableColumn<Course, String> codeColumn = new TableColumn<>("Code");
                 codeColumn.setCellValueFactory(new PropertyValueFactory<>("code"));
 
-                TableColumn<Course, String> courseColumn = new TableColumn<>("Course");
+                TableColumn<Course, String> courseColumn = new TableColumn<>("Cours");
                 courseColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
 
                 // create the table and add the columns
@@ -129,15 +127,13 @@ public class Vue extends Application {
                 root.setRight(formPane);
 
                 String selection = "ok";
-                Alert alert = new Alert(AlertType.CONFIRMATION, "Delete " + selection + " ?", ButtonType.YES,
-                                ButtonType.NO, ButtonType.CANCEL);
-                // alert.showAndWait();
+                Alert alert = new Alert(AlertType.CONFIRMATION, null, ButtonType.OK);
                 //
                 controleur = new Controleur(coursesVue, alert);
 
                 // Set up the scene and show the stage
                 primaryStage.setScene(new Scene(root, 800, 500));
-                primaryStage.setTitle("Course List App");
+                primaryStage.setTitle("Inscription UdeM");
                 primaryStage.show();
 
                 // primaryStage.setTitle("Formulaire d'inscription");

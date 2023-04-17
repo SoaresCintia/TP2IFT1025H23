@@ -56,7 +56,7 @@ public class Client {
         }
     }
 
-    public void inscription(RegistrationForm registrationForm, String session)
+    public Boolean inscription(RegistrationForm registrationForm, String session)
             throws IOException, ClassNotFoundException {
 
         OutputStream outputStream = clientSocket.getOutputStream();
@@ -70,9 +70,12 @@ public class Client {
 
         InputStream inputStream = clientSocket.getInputStream();
         ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
-        String message = (String) objectInputStream.readObject();
+        // String message = (String) objectInputStream.readObject();
+        Boolean succes = (Boolean) objectInputStream.readObject();
 
-        System.out.println(message);
+        // System.out.println(message);
+        // System.out.println(succes);
+        return succes;
 
     }
 

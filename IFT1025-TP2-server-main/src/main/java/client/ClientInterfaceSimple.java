@@ -12,9 +12,12 @@ public class ClientInterfaceSimple {
 
     private String session;
 
-    public String initialisation() {
-
+    public ClientInterfaceSimple() {
         System.out.println("***Bienvenue au portail d'inscription de cours de l'UdeM***");
+
+    }
+
+    public String initialisation() {
 
         displaySessions();
 
@@ -92,14 +95,14 @@ public class ClientInterfaceSimple {
         return registrationForm;
     }
 
-    // public void displayLastMessage(Boolean success, String firstName, String
-    // courseCode) {
-    // if (success) {
-    // System.out.println("Félicitations! Inscription réussie de " + firstName + "
-    // au cours " + courseCode);
-    // } else {
-    // System.out.println("Échec dans l'inscription pourquoi ?");
-    // }
-    // }
+    public void displayLastMessage(Boolean succes, RegistrationForm registrationForm) {
+        if (succes) {
+            System.out.println("Félicitations! Inscription réussie de " + registrationForm.getPrenom() +
+                    "au cours " + registrationForm.getCourse().getCode());
+        } else {
+            System.out.println(
+                    "Le code du cours n'est pas valide ou ce cours n'est pas disponible pour la session choisie");
+        }
 
+    }
 }
