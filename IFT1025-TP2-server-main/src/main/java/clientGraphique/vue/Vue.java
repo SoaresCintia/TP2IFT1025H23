@@ -30,6 +30,7 @@ import javafx.scene.text.Text;
  * application.
  * 
  * Elle sert également comme le point d'entrée de l'application.
+ * Pour l'executer, on peut faire la commande suivante sur le terminal.
  * >> mvn javafx:run
  */
 public class Vue extends Application {
@@ -39,34 +40,32 @@ public class Vue extends Application {
         private TableView<Course> table;
 
         /**
-         * methode qui initialise l'application
+         * Methode qui initialise l'application.
          */
         @Override
         public void start(Stage primaryStage) {
 
                 BorderPane root = new BorderPane();
 
-                // Create the left panel with the course list
+                // Cree le panel gauche avec la liste des cours.
                 VBox coursePane = new VBox();
 
-                // create the table columns
                 TableColumn<Course, String> codeColumn = new TableColumn<>("Code");
                 codeColumn.setCellValueFactory(new PropertyValueFactory<>("code"));
 
                 TableColumn<Course, String> courseColumn = new TableColumn<>("Cours");
                 courseColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
 
-                // create the table and add the columns
                 table = new TableView<>();
 
                 final Label label = new Label("Liste des cours");
                 label.setFont(new Font("Arial", 20));
+                label.setCenterShape(false);
 
                 table.setEditable(true);
 
                 table.getColumns().addAll(codeColumn, courseColumn);
 
-                // add some sample data to the table
                 ObservableList<Course> coursesVue = FXCollections.observableArrayList();
 
                 table.setItems(coursesVue);
@@ -77,7 +76,7 @@ public class Vue extends Application {
                 coursePane.getChildren().addAll(label, table);
 
                 HBox hBoxSessions = new HBox();
-                // liste de sessions
+
                 String[] sessions = { "Automne", "Hiver", "Ete" };
                 ChoiceBox<String> optionSessions = new ChoiceBox<String>();
                 optionSessions.setPadding(new Insets(10));
@@ -107,7 +106,6 @@ public class Vue extends Application {
                 formTitle.setFont(Font.font("serif", 25));
                 formPane.addRow(0, formTitle);
 
-                // Add the form fields
                 Label firstNameLabel = new Label("Prénom:");
                 TextField firstName = new TextField();
                 formPane.addRow(1, firstNameLabel, firstName);
@@ -124,7 +122,6 @@ public class Vue extends Application {
                 TextField matricule = new TextField();
                 formPane.addRow(4, matriculeLabel, matricule);
 
-                // Add the submit button
                 Button submitButton = new Button("envoyer");
 
                 submitButton.setOnAction(e -> {
@@ -140,7 +137,6 @@ public class Vue extends Application {
                 //
                 controleur = new Controleur(coursesVue, alert);
 
-                // Set up the scene and show the stage
                 primaryStage.setScene(new Scene(root, 800, 400));
                 primaryStage.setTitle("Inscription UdeM");
                 primaryStage.show();

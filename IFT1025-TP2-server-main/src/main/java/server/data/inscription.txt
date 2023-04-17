@@ -1,2 +1,4 @@
 Automne	IFT2255	12345678	Michalis	Famelis	mfamelis@iro.umontreal.ca
-Automne	IFT1227	87	ci	so	ci
+Hiver	IFT1025	C2791	cintia	soares	cintiasoares@gmail.com
+Ete	IFT2256	C2791	soares	dalila	cintiasoares@gmail.com
+Automne	IFT1015	C3456	cintia	dalila	cintiasoares@gmail.com

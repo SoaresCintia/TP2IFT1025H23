@@ -4,7 +4,6 @@ import java.io.IOException;
 
 /**
  * Point d'entree pour l'interface simple dans la ligne de console
- * ici teste
  */
 public class ClientSimple {
 
@@ -13,5 +12,4 @@ public class ClientSimple {
         ClientControleurSimple constructeur = new ClientControleurSimple();
 
     }
-
 }

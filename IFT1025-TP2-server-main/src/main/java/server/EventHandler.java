@@ -1,7 +1,7 @@
 package server;
 
 /**
- * Cette interface fonctionnelle
+ * Cette interface fonctionnelle qui permet au serveur d'ajouter des evenements.
  */
 
 @FunctionalInterface
