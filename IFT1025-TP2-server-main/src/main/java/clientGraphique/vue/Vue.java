@@ -1,5 +1,6 @@
 package clientGraphique.vue;
 
+import java.security.Policy;
 import java.util.ArrayList;
 
 import javax.swing.text.StyledEditorKit.ForegroundAction;
@@ -27,6 +28,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
+import javafx.scene.text.Text;
 
 /*
  * Dans cette classe nous definissons les éléments graphiques de notre
@@ -45,10 +48,6 @@ public class Vue extends Application {
         @Override
         public void start(Stage primaryStage) {
 
-                ArrayList<Course> courses;
-
-                String session = "Automne";
-
                 BorderPane root = new BorderPane();
 
                 // Create the left panel with the course list
@@ -63,6 +62,12 @@ public class Vue extends Application {
 
                 // create the table and add the columns
                 table = new TableView<>();
+
+                final Label label = new Label("Liste des cours");
+                label.setFont(new Font("Arial", 20));
+
+                table.setEditable(true);
+
                 table.getColumns().addAll(codeColumn, courseColumn);
 
                 // add some sample data to the table
@@ -70,11 +75,10 @@ public class Vue extends Application {
                 // = FXCollections.observableArrayList(courses);
                 table.setItems(coursesVue);
 
-                String courseCode = "";
                 table.setOnMouseClicked(event -> controleur
                                 .setCourseCode(table.getSelectionModel().getSelectedItem().getCode()));
 
-                coursePane.getChildren().addAll(table);
+                coursePane.getChildren().addAll(label, table);
 
                 String[] sessions = { "Automne", "Hiver", "Ete" };
 
@@ -96,22 +100,26 @@ public class Vue extends Application {
                 formPane.setHgap(6);
                 formPane.setVgap(6);
 
+                Text formTitle = new Text("Formulaire d'inscription");
+                formTitle.setFont(Font.font("serif", 25));
+                formPane.addRow(0, formTitle);
+
                 // Add the form fields
                 Label firstNameLabel = new Label("Prénom:");
                 TextField firstName = new TextField();
-                formPane.addRow(0, firstNameLabel, firstName);
+                formPane.addRow(1, firstNameLabel, firstName);
 
                 Label lastNameLabel = new Label("Nom:");
                 TextField lastName = new TextField();
-                formPane.addRow(0, lastNameLabel, lastName);
+                formPane.addRow(2, lastNameLabel, lastName);
 
                 Label emailLabel = new Label("Email:");
                 TextField email = new TextField();
-                formPane.addRow(1, emailLabel, email);
+                formPane.addRow(3, emailLabel, email);
 
                 Label matriculeLabel = new Label("Matricule:");
                 TextField matricule = new TextField();
-                formPane.addRow(2, matriculeLabel, matricule);
+                formPane.addRow(4, matriculeLabel, matricule);
 
                 // Add the submit button
                 Button submitButton = new Button("envoyer");
@@ -121,12 +129,11 @@ public class Vue extends Application {
                         controleur.doInscription(firstName.getText(), lastName.getText(), email.getText(),
                                         matricule.getText());
                 });
-                formPane.addRow(3, submitButton);
+                formPane.addRow(5, submitButton);
 
                 root.setLeft(coursePane);
                 root.setRight(formPane);
 
-                String selection = "ok";
                 Alert alert = new Alert(AlertType.CONFIRMATION, null, ButtonType.OK);
                 //
                 controleur = new Controleur(coursesVue, alert);

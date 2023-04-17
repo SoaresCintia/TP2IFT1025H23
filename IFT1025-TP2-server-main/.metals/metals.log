@@ -16662,3 +16662,87 @@ Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/s
 Note: Recompile with -Xlint:unchecked for details.
 1 warning.
 2023.04.16 20:58:48 INFO  time: compiled Server in 3.61s
+2023.04.16 21:00:34 INFO  compiling server (1 java source)
+2023.04.16 21:00:39 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:00:39 INFO  time: compiled Server in 4.33s
+2023.04.16 21:02:00 INFO  compiling server (1 java source)
+2023.04.16 21:02:03 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:02:03 INFO  time: compiled Server in 3.46s
+2023.04.16 21:05:29 INFO  compiling server (1 java source)
+2023.04.16 21:05:33 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:05:33 INFO  time: compiled Server in 3.8s
+2023.04.16 21:06:18 INFO  compiling server (1 java source)
+2023.04.16 21:06:22 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:06:22 INFO  time: compiled Server in 3.82s
+2023.04.16 21:06:57 INFO  compiling server (1 java source)
+2023.04.16 21:07:01 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:07:01 INFO  time: compiled Server in 3.84s
+2023.04.16 21:07:22 INFO  compiling server (1 java source)
+2023.04.16 21:07:26 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:07:26 INFO  time: compiled Server in 4.56s
+2023.04.16 21:09:37 INFO  compiling server (1 java source)
+2023.04.16 21:09:40 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:09:40 INFO  time: compiled Server in 3.72s
+Apr. 16, 2023 9:14:32 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12756
+2023.04.16 21:14:59 INFO  compiling server (1 java source)
+2023.04.16 21:15:03 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:15:03 INFO  time: compiled Server in 4.18s
+2023.04.16 21:15:23 INFO  compiling server (1 java source)
+2023.04.16 21:15:26 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:15:26 INFO  time: compiled Server in 3.22s
+Apr. 16, 2023 9:16:59 P.M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12883
+2023.04.16 21:17:00 INFO  compiling server (1 java source)
+2023.04.16 21:17:03 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:17:03 INFO  time: compiled Server in 3.5s
+2023.04.16 21:19:23 INFO  compiling server (1 java source)
+2023.04.16 21:19:27 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:19:27 INFO  time: compiled Server in 4.23s
+2023.04.16 21:19:55 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java
+2023.04.16 21:19:55 WARN  Could not load snapshot text for /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java
+2023.04.16 21:19:55 INFO  compiling server (1 java source)
+2023.04.16 21:19:58 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:19:58 INFO  time: compiled Server in 3.26s
+2023.04.16 21:20:03 INFO  compiling server (1 java source)
+2023.04.16 21:20:06 WARN  Unexpected javac output: warning: [options] system modules path not set in conjunction with -source 11
+Note: /Users/cintia/Documents/BaccInf/Sem2/IFT1025/TP2/IFT1025-TP2-server-main/src/main/java/clientGraphique/vue/Vue.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning.
+2023.04.16 21:20:06 INFO  time: compiled Server in 2.9s
