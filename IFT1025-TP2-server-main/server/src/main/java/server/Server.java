@@ -1,8 +1,8 @@
 package server;
 
 import javafx.util.Pair;
-import server.models.Course;
-import server.models.RegistrationForm;
+import common.models.Course;
+import common.models.RegistrationForm;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

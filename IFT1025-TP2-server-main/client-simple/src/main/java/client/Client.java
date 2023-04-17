@@ -9,8 +9,8 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 
-import server.models.Course;
-import server.models.RegistrationForm;
+import common.models.Course;
+import common.models.RegistrationForm;
 
 /**
  * Classe qui represente la partie model du client simple

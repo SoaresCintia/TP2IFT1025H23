@@ -2,8 +2,8 @@ package client;
 
 import java.util.ArrayList;
 
-import server.models.Course;
-import server.models.RegistrationForm;
+import common.models.Course;
+import common.models.RegistrationForm;
 
 /**
  * classe qui fait le lien entre la classe Client et la classe
